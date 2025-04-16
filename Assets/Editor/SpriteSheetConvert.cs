@@ -6,6 +6,7 @@ using System.Collections;
 using System.Collections.Generic;
 #if UNITY_2020_1_OR_NEWER
 using UnityEditor.U2D;
+using UnityEditor.U2D.Sprites;
 #endif
 
 using Newtonsoft.Json;
@@ -262,6 +263,7 @@ public class SpriteSheetConvert : ScriptableObject
         //Texture2D selTex = AssetDatabase.LoadAssetAtPath(texPath, typeof(Texture2D)) as Texture2D;
         Debug.Log("texture:" + texPath);
         Debug.Log("write texture:" + selTex.name+ "  size:"+selTex.texelSize);
+        
         TextureImporter textureImporter = AssetImporter.GetAtPath(texPath) as TextureImporter;
         SpriteMetaData[] sheetMetas = new SpriteMetaData[at.sheets.Count];
         for (int i = 0; i < at.sheets.Count; i++)
@@ -275,36 +277,58 @@ public class SpriteSheetConvert : ScriptableObject
             {
                 var w = frameData.frame.height;
                 var h = frameData.frame.width;
-                sheetMetas[i].rect = new Rect(frameData.frame.x, at.size.y - frameData.frame.y - h,w, h);//这里原点在左下角，y相反,h,w相反
+                sheetMetas[i].rect = new Rect(frameData.frame.x, at.size.y - frameData.frame.y - h,w, h);
             }
             else
             {
-                //at.size.y - frameData.frame.y - frameData.frame.height
                 sheetMetas[i].rect = new Rect(frameData.frame.x, at.size.y - frameData.frame.y - frameData.frame.height,
-    frameData.frame.width, frameData.frame.height);//这里原点在左下角，y相反
+                    frameData.frame.width, frameData.frame.height);
             }
-
-            //Debug.Log("do sprite:" + frameData.name);
         }
-        // 在设置精灵表数据前添加清理旧数据的逻辑
+
+        // 使用ISpriteEditorDataProvider设置精灵数据
+        #if UNITY_2020_1_OR_NEWER
+        var factory = new SpriteDataProviderFactories();
+        var dataProvider = factory.GetSpriteEditorDataProviderFromObject(textureImporter);
+        dataProvider.InitSpriteEditorDataProvider();
+    
+        // 设置纹理导入器参数
         textureImporter.isReadable = true;
         textureImporter.textureType = TextureImporterType.Sprite;
         textureImporter.spriteImportMode = SpriteImportMode.Multiple;
-
-        // 清除旧的精灵设置
-        //textureImporter.spritesheet = null;// new SpriteMetaData[0];
-        //AssetDatabase.ImportAsset(texPath, ImportAssetOptions.ForceUpdate);
-        
-        // 获取最新的importer实例
-        //textureImporter = AssetImporter.GetAtPath(texPath) as TextureImporter;
-        
-        // 设置新的精灵表数据
+    
+        // 将SpriteMetaData转换为SpriteRect
+        var spriteRects = new List<SpriteRect>();
+        for (int i = 0; i < sheetMetas.Length; i++)
+        {
+            var meta = sheetMetas[i];
+            var spriteRect = new SpriteRect()
+            {
+                name = meta.name,
+                rect = meta.rect,
+                alignment = (SpriteAlignment)meta.alignment,
+                border = meta.border,
+                pivot = meta.pivot
+            };
+            spriteRects.Add(spriteRect);
+        }
+    
+        // 设置精灵数据
+        dataProvider.SetSpriteRects(spriteRects.ToArray());
+        dataProvider.Apply();
+    
+        // 应用修改
+        AssetDatabase.ImportAsset(texPath, ImportAssetOptions.ForceUpdate);
+        #else
+        // 旧版本Unity的回退方案
+        textureImporter.isReadable = true;
+        textureImporter.textureType = TextureImporterType.Sprite;
+        textureImporter.spriteImportMode = SpriteImportMode.Multiple;
         textureImporter.spritesheet = sheetMetas;
-        
-        // 一次性应用所有修改
         EditorUtility.SetDirty(textureImporter);
         AssetDatabase.WriteImportSettingsIfDirty(texPath);
         AssetDatabase.ImportAsset(texPath, ImportAssetOptions.ForceUpdate);
+        #endif
 
         Debug.LogWarning("#ConvertEgretJsonToUI end:" + texPath);
     }
