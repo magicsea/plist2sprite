@@ -4,6 +4,12 @@ using System.IO;
 using System.Xml;
 using System.Collections;
 using System.Collections.Generic;
+#if UNITY_2020_1_OR_NEWER
+using UnityEditor.U2D;
+#endif
+
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 //using Data;
 public class TPFrameData
 {
@@ -138,12 +144,177 @@ public class TPAtlas
     }
 
 }
+
+// 需要在类外部添加这些辅助类
+[System.Serializable]
+public class JsonData
+{
+    public string file;
+    public Dictionary<string, FrameData> frames;
+}
+
+[System.Serializable]
+public class FrameData
+{
+    public float x;
+    public float y;
+    public float w;
+    public float h;
+    public float offX;
+    public float offY;
+    public float sourceW;
+    public float sourceH;
+}
 public class SpriteSheetConvert : ScriptableObject
 {
     public static string GetUTF8String(byte[] bt)
     {
         string val = System.Text.Encoding.UTF8.GetString(bt);
         return val;
+    }
+    [MenuItem("Assets/Plist2Sprite/egret-json拆分UI(选择json)", validate = true)]
+    static bool ValidateConvertEgretJsonToUI()
+    {
+        return Selection.activeObject != null && 
+               AssetDatabase.GetAssetPath(Selection.activeObject).EndsWith(".json");
+    }
+    
+
+    [MenuItem("Assets/Plist2Sprite/egret-json拆分UI(选择json)")]
+    static void ConvertEgretJsonToUI()
+    {
+        //EditorUtility.DisplayDialog("MyTool", "Do It in C# !", "OK", "");
+        Object selobj = Selection.activeObject;
+        string selectionPath = AssetDatabase.GetAssetPath(Selection.activeObject);
+        if (!selectionPath.EndsWith(".json"))
+        {
+            EditorUtility.DisplayDialog("Error", "Please select a json file!", "OK", "");
+            return;
+        }
+
+        Debug.LogWarning("#PLisToSprites start:" + selectionPath);
+        string fileContent = string.Empty;
+        using (FileStream file = new FileStream(selectionPath, FileMode.Open))
+        {
+            byte[] str = new byte[(int)file.Length];
+            file.Read(str, 0, str.Length);
+            fileContent = GetUTF8String(str);
+            Debug.Log(fileContent);
+            file.Close();
+            file.Dispose();
+        }
+        //读取json文件，解析内容，结构：
+        /*
+        {
+            "file":"createRole.png",
+            "frames":{
+                        "login_btn":{"x":300,"y":1,"w":297,"h":129,"offX":0,"offY":0,"sourceW":297,"sourceH":129}
+                    }
+            }
+        */
+        JObject jsonObj = JObject.Parse(fileContent);
+        TPAtlas at = new TPAtlas();
+        at.realTextureFileName = jsonObj["file"].ToString();
+        // 读取图片并获取宽高
+        string texPath = Path.GetDirectoryName(selectionPath) + "/" + at.realTextureFileName;
+        Texture2D selTex = AssetDatabase.LoadAssetAtPath<Texture2D>(texPath);
+        if (selTex != null)
+        {
+            at.size = new Vector2(selTex.width, selTex.height);
+        }
+        else
+        {
+            Debug.LogError("无法加载纹理: " + texPath);
+            return;
+        }
+
+        // 解析frames
+        JObject frames = (JObject)jsonObj["frames"];
+        foreach (var frame in frames)
+        {
+                TPFrameData frameData = new TPFrameData();
+                frameData.name = frame.Key;
+                JToken frameInfo = frame.Value;
+                
+                frameData.frame = new Rect(
+                    float.Parse(frameInfo["x"].ToString()),
+                    float.Parse(frameInfo["y"].ToString()),
+                    float.Parse(frameInfo["w"].ToString()),
+                    float.Parse(frameInfo["h"].ToString())
+                );
+                
+                frameData.offset = new Vector2(
+                    float.Parse(frameInfo["offX"].ToString()),
+                    float.Parse(frameInfo["offY"].ToString())
+                );
+                
+                frameData.sourceSize = new Vector2(
+                    float.Parse(frameInfo["sourceW"].ToString()),
+                    float.Parse(frameInfo["sourceH"].ToString())
+                );
+                
+                at.sheets.Add(frameData);
+        }   
+      
+        
+        //重写meta
+        //string texPath = Path.GetDirectoryName(selectionPath) + "/" + at.realTextureFileName;
+        //Texture2D selTex = AssetDatabase.LoadAssetAtPath(texPath, typeof(Texture2D)) as Texture2D;
+        Debug.Log("texture:" + texPath);
+        Debug.Log("write texture:" + selTex.name+ "  size:"+selTex.texelSize);
+        TextureImporter textureImporter = AssetImporter.GetAtPath(texPath) as TextureImporter;
+        SpriteMetaData[] sheetMetas = new SpriteMetaData[at.sheets.Count];
+        for (int i = 0; i < at.sheets.Count; i++)
+        {
+            var frameData = at.sheets[i];
+            sheetMetas[i].alignment = 0;
+            sheetMetas[i].border = new Vector4(0, 0, 0, 0);
+            sheetMetas[i].name = frameData.name;
+            sheetMetas[i].pivot = new Vector2(0.5f, 0.5f);
+            if(frameData.rotated)
+            {
+                var w = frameData.frame.height;
+                var h = frameData.frame.width;
+                sheetMetas[i].rect = new Rect(frameData.frame.x, at.size.y - frameData.frame.y - h,w, h);//这里原点在左下角，y相反,h,w相反
+            }
+            else
+            {
+                //at.size.y - frameData.frame.y - frameData.frame.height
+                sheetMetas[i].rect = new Rect(frameData.frame.x, at.size.y - frameData.frame.y - frameData.frame.height,
+    frameData.frame.width, frameData.frame.height);//这里原点在左下角，y相反
+            }
+
+            //Debug.Log("do sprite:" + frameData.name);
+        }
+        // 在设置精灵表数据前添加清理旧数据的逻辑
+        textureImporter.isReadable = true;
+        textureImporter.textureType = TextureImporterType.Sprite;
+        textureImporter.spriteImportMode = SpriteImportMode.Multiple;
+
+        // 清除旧的精灵设置
+        //textureImporter.spritesheet = null;// new SpriteMetaData[0];
+        //AssetDatabase.ImportAsset(texPath, ImportAssetOptions.ForceUpdate);
+        
+        // 获取最新的importer实例
+        //textureImporter = AssetImporter.GetAtPath(texPath) as TextureImporter;
+        
+        // 设置新的精灵表数据
+        textureImporter.spritesheet = sheetMetas;
+        
+        // 一次性应用所有修改
+        EditorUtility.SetDirty(textureImporter);
+        AssetDatabase.WriteImportSettingsIfDirty(texPath);
+        AssetDatabase.ImportAsset(texPath, ImportAssetOptions.ForceUpdate);
+
+        Debug.LogWarning("#ConvertEgretJsonToUI end:" + texPath);
+    }
+
+
+    [MenuItem("Assets/Plist2Sprite/PLis拆分Sprite(选择PList)", validate = true)]
+    static bool ValidateConvertSprite()
+    {
+        return Selection.activeObject != null &&
+               (AssetDatabase.GetAssetPath(Selection.activeObject).EndsWith(".plist") || AssetDatabase.GetAssetPath(Selection.activeObject).EndsWith(".txt"));
     }
 
     [MenuItem("Assets/Plist2Sprite/PLis拆分Sprite(选择PList)")]
@@ -216,18 +387,21 @@ public class SpriteSheetConvert : ScriptableObject
             }
             else
             {
-                sheetMetas[i].rect = new Rect(frameData.frame.x, at.size.y - frameData.frame.y - frameData.frame.height,
+                sheetMetas[i].rect = new Rect(frameData.frame.x, at.size.y - frameData.frame.y - frameData.frame.height,//原点左上
     frameData.frame.width, frameData.frame.height);//这里原点在左下角，y相反
             }
 
             //Debug.Log("do sprite:" + frameData.name);
         }
         //textureImporter.spriteImportMode = SpriteImportMode.Multiple;
-        textureImporter.spritesheet = sheetMetas;
+               textureImporter.spritesheet = sheetMetas;
 
         //save
         textureImporter.textureType = TextureImporterType.Sprite;       //bug?
         textureImporter.spriteImportMode = SpriteImportMode.Multiple;   //不加这两句会导致无法保存meta
+
+        EditorUtility.SetDirty(textureImporter);
+        AssetDatabase.WriteImportSettingsIfDirty(texPath);
         AssetDatabase.ImportAsset(texPath, ImportAssetOptions.ForceUpdate);
 
         Debug.LogWarning("#PLisToSprites end:" + texPath);
@@ -484,7 +658,7 @@ public class SpriteSheetConvert : ScriptableObject
         }
         catch (System.Exception e)
         {
-            Debug.LogError("write file error:" + outPath);
+            Debug.LogError("write file error:" + outPath+e);
             throw;
         }
 
