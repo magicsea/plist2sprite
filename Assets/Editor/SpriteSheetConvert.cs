@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using UnityEditor;
+using System.Linq;
 using System.IO;
 using System.Xml;
 using System.Collections;
@@ -9,8 +10,13 @@ using UnityEditor.U2D;
 using UnityEditor.U2D.Sprites;
 #endif
 
+#if UNITY_EDITOR
+using UnityEditor;
+#endif
+
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
+
 //using Data;
 public class TPFrameData
 {
@@ -146,26 +152,6 @@ public class TPAtlas
 
 }
 
-// 需要在类外部添加这些辅助类
-[System.Serializable]
-public class JsonData
-{
-    public string file;
-    public Dictionary<string, FrameData> frames;
-}
-
-[System.Serializable]
-public class FrameData
-{
-    public float x;
-    public float y;
-    public float w;
-    public float h;
-    public float offX;
-    public float offY;
-    public float sourceW;
-    public float sourceH;
-}
 public class SpriteSheetConvert : ScriptableObject
 {
     public static string GetUTF8String(byte[] bt)
@@ -173,6 +159,208 @@ public class SpriteSheetConvert : ScriptableObject
         string val = System.Text.Encoding.UTF8.GetString(bt);
         return val;
     }
+
+    [MenuItem("Assets/Plist2Sprite/egret-json拆分动画(选择json)", validate = true)]
+    static bool ValidateConvertEgretJsonToAnim()
+    {
+        return Selection.activeObject != null && 
+            AssetDatabase.GetAssetPath(Selection.activeObject).EndsWith(".json");
+    }
+
+    [MenuItem("Assets/Plist2Sprite/egret-json拆分动画(选择json)")]
+    static void ConvertEgretJsonToAnim()
+    {
+        Object selobj = Selection.activeObject;
+        string selectionPath = AssetDatabase.GetAssetPath(Selection.activeObject);
+        if (!selectionPath.EndsWith(".json"))
+        {
+            EditorUtility.DisplayDialog("Error", "请选择动画json文件!", "OK", "");
+            return;
+        }
+
+        Debug.LogWarning("#ConvertEgretJsonToAnim start:" + selectionPath);
+        string fileContent = string.Empty;
+        using (FileStream file = new FileStream(selectionPath, FileMode.Open))
+        {
+            byte[] str = new byte[(int)file.Length];
+            file.Read(str, 0, str.Length);
+            fileContent = GetUTF8String(str);
+            file.Close();
+            file.Dispose();
+        }
+
+        JObject jsonObj = JObject.Parse(fileContent);
+        JObject resData = jsonObj["res"] as JObject;
+        if (resData == null)
+        {
+            EditorUtility.DisplayDialog("Error", "JSON文件中缺少res部分!", "OK", "");
+            return;
+        }
+
+        TPAtlas at = new TPAtlas();
+        at.realTextureFileName = Path.GetFileNameWithoutExtension(selectionPath) + ".png";
+        
+        // 读取图片并获取宽高
+        string texPath = Path.GetDirectoryName(selectionPath) + "/" + at.realTextureFileName;
+        Texture2D selTex = AssetDatabase.LoadAssetAtPath<Texture2D>(texPath);
+        if (selTex != null)
+        {
+            at.size = new Vector2(selTex.width, selTex.height);
+        }
+        else
+        {
+            Debug.LogError("无法加载纹理: " + texPath);
+            return;
+        }
+
+        // 解析res部分
+        foreach (var frame in resData)
+        {
+            TPFrameData frameData = new TPFrameData();
+            frameData.name = frame.Key;
+            JToken frameInfo = frame.Value;
+            
+            frameData.frame = new Rect(
+                float.Parse(frameInfo["x"].ToString()),
+                float.Parse(frameInfo["y"].ToString()),
+                float.Parse(frameInfo["w"].ToString()),
+                float.Parse(frameInfo["h"].ToString())
+            );
+            
+            frameData.offset = Vector2.zero; // 动画json通常没有offset
+            frameData.sourceSize = new Vector2(
+                float.Parse(frameInfo["w"].ToString()),
+                float.Parse(frameInfo["h"].ToString())
+            );
+            
+            at.sheets.Add(frameData);
+        }
+
+        // 设置纹理导入器参数
+        TextureImporter textureImporter = AssetImporter.GetAtPath(texPath) as TextureImporter;
+        SpriteMetaData[] sheetMetas = new SpriteMetaData[at.sheets.Count];
+        for (int i = 0; i < at.sheets.Count; i++)
+        {
+            var frameData = at.sheets[i];
+            sheetMetas[i].alignment = 0;
+            sheetMetas[i].border = new Vector4(0, 0, 0, 0);
+            sheetMetas[i].name = frameData.name;
+            sheetMetas[i].pivot = new Vector2(0.5f, 0.5f);
+            sheetMetas[i].rect = new Rect(
+                frameData.frame.x, 
+                at.size.y - frameData.frame.y - frameData.frame.height,
+                frameData.frame.width, 
+                frameData.frame.height
+            );
+        }
+
+        // 使用ISpriteEditorDataProvider设置精灵数据
+        #if UNITY_2020_1_OR_NEWER
+        var factory = new SpriteDataProviderFactories();
+        var dataProvider = factory.GetSpriteEditorDataProviderFromObject(textureImporter);
+        dataProvider.InitSpriteEditorDataProvider();
+
+        textureImporter.isReadable = true;
+        textureImporter.textureType = TextureImporterType.Sprite;
+        textureImporter.spriteImportMode = SpriteImportMode.Multiple;
+
+        var spriteRects = new List<SpriteRect>();
+        for (int i = 0; i < sheetMetas.Length; i++)
+        {
+            var meta = sheetMetas[i];
+            var spriteRect = new SpriteRect()
+            {
+                name = meta.name,
+                rect = meta.rect,
+                alignment = (SpriteAlignment)meta.alignment,
+                border = meta.border,
+                pivot = meta.pivot
+            };
+            spriteRects.Add(spriteRect);
+        }
+
+        dataProvider.SetSpriteRects(spriteRects.ToArray());
+        dataProvider.Apply();
+        #else
+        textureImporter.isReadable = true;
+        textureImporter.textureType = TextureImporterType.Sprite;
+        textureImporter.spriteImportMode = SpriteImportMode.Multiple;
+        textureImporter.spritesheet = sheetMetas;
+        EditorUtility.SetDirty(textureImporter);
+        AssetDatabase.WriteImportSettingsIfDirty(texPath);
+        #endif
+
+        AssetDatabase.ImportAsset(texPath, ImportAssetOptions.ForceUpdate);
+        // 解析mc部分
+        JObject mcData = jsonObj["mc"] as JObject;
+        FrameAnimInfo animInfo = new FrameAnimInfo();
+        
+        // 提前加载所有Sprite
+        Sprite[] allSprites = AssetDatabase.LoadAllAssetsAtPath(texPath).OfType<Sprite>().ToArray();
+        
+        if (mcData != null)
+        {
+            foreach (var animClip in mcData)
+            {
+                string clipName = animClip.Key;
+                JToken clipData = animClip.Value;
+                animInfo.AnimName = clipName;
+                animInfo.FrameRate = clipData["frameRate"]?.ToObject<int>() ?? 24;
+                animInfo.Loop = true; // 默认循环播放
+                
+                JArray frames = clipData["frames"] as JArray;
+                if (frames != null)
+                {
+                    int i = 0;
+                    animInfo.Frames = new FrameData[frames.Count];
+                    foreach (JToken frame in frames)
+                    {
+                        string resName = frame["res"].ToString();
+                        Vector2 offset = new Vector2(
+                            frame["x"]?.ToObject<float>() ?? 0,
+                            frame["y"]?.ToObject<float>() ?? 0
+                        );
+                        // 从已加载的Sprite数组中查找
+                        Sprite targetSprite = allSprites.FirstOrDefault(s => s.name == resName);
+                        if (targetSprite == null)
+                        {
+                            Debug.LogError("无法加载Sprite: " + resName);
+                        }
+                        
+                        var fd = new FrameData() {
+                            res = resName,
+                            x = offset.x,
+                            y = offset.y,
+                            sprite = targetSprite  // 关联对应的Sprite
+                        }; 
+                        animInfo.Frames[i] = fd;
+                        i++;
+                    }
+                }
+            }
+        }
+
+        // 创建预设
+        string prefabPath = Path.GetDirectoryName(selectionPath) + "/" + Path.GetFileNameWithoutExtension(selectionPath) + ".prefab";
+        
+        // 删除已存在的预设
+        if (File.Exists(prefabPath))
+        {
+            AssetDatabase.DeleteAsset(prefabPath);
+        }
+        
+        GameObject prefab = new GameObject(Path.GetFileNameWithoutExtension(selectionPath));
+        FrameAnimData animData = prefab.AddComponent<FrameAnimData>();
+        animData.Info = animInfo;
+        
+        // 保存预设
+        PrefabUtility.SaveAsPrefabAsset(prefab, prefabPath);
+        GameObject.DestroyImmediate(prefab);
+
+        Debug.LogWarning("#ConvertEgretJsonToAnim end:" + texPath);
+    }
+
+
     [MenuItem("Assets/Plist2Sprite/egret-json拆分UI(选择json)", validate = true)]
     static bool ValidateConvertEgretJsonToUI()
     {
