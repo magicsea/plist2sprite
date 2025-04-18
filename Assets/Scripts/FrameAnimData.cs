@@ -25,10 +25,16 @@ public class FrameAnimInfo
     public bool Loop;
 }
 
+[System.Serializable]
+public class FrameAnimRes
+{
+    public List<FrameAnimInfo> Infos;
+}
+
 
 public class FrameAnimData : MonoBehaviour
 {
-    public FrameAnimInfo Info;
+    public FrameAnimRes AnimRes;
 
     void Start()
     {

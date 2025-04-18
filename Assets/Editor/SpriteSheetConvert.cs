@@ -190,6 +190,50 @@ public class SpriteSheetConvert : ScriptableObject
         }
 
         JObject jsonObj = JObject.Parse(fileContent);
+
+        // 解析mc部分
+        List<FrameAnimInfo> anims = new List<FrameAnimInfo>();
+        JObject mcData = jsonObj["mc"] as JObject;
+
+        // 提前加载所有Sprite
+        if (mcData != null)
+        {
+            foreach (var animClip in mcData)
+            {
+                FrameAnimInfo animInfo = new FrameAnimInfo();
+                string clipName = animClip.Key;
+                JToken clipData = animClip.Value;
+                animInfo.AnimName = clipName;
+                animInfo.FrameRate = clipData["frameRate"]?.ToObject<int>() ?? 24;
+                animInfo.Loop = true; // 默认循环播放
+                
+                JArray frames = clipData["frames"] as JArray;
+                if (frames != null)
+                {
+                    int i = 0;
+                    animInfo.Frames = new FrameData[frames.Count];
+                    foreach (JToken frame in frames)
+                    {
+                        string resName = frame["res"].ToString();
+                        Vector2 offset = new Vector2(
+                            frame["x"]?.ToObject<float>() ?? 0,
+                            frame["y"]?.ToObject<float>() ?? 0
+                        );
+                        var fd = new FrameData() {
+                            res = resName,
+                            x = offset.x,
+                            y = offset.y,
+                        }; 
+                        animInfo.Frames[i] = fd;
+                        i++;
+                    }
+                }
+                anims.Add(animInfo);
+            }
+        }
+
+
+        //解析res部分
         JObject resData = jsonObj["res"] as JObject;
         if (resData == null)
         {
@@ -242,20 +286,44 @@ public class SpriteSheetConvert : ScriptableObject
         for (int i = 0; i < at.sheets.Count; i++)
         {
             var frameData = at.sheets[i];
-            sheetMetas[i].alignment = 0;
+            //sheetMetas[i].alignment = 0;
             sheetMetas[i].border = new Vector4(0, 0, 0, 0);
             sheetMetas[i].name = frameData.name;
-            sheetMetas[i].pivot = new Vector2(0.5f, 0.5f);
+            //sheetMetas[i].pivot = new Vector2(0.5f, 0.5f);
             sheetMetas[i].rect = new Rect(
                 frameData.frame.x, 
                 at.size.y - frameData.frame.y - frameData.frame.height,
                 frameData.frame.width, 
                 frameData.frame.height
             );
+            
+            // 查找帧信息
+            FrameData frameInfo = null;
+            foreach(var anim in anims)
+            {
+                frameInfo = anim.Frames.FirstOrDefault(f => f.res == frameData.name);
+                if(frameInfo != null) break;
+            }
+            
+            // 计算pivot
+            Vector2 pivot = Vector2.zero;
+            if(frameInfo != null && frameData.sourceSize.x > 0 && frameData.sourceSize.y > 0)
+            {
+                // 计算pivot时考虑负偏移
+                float pivotX = - (frameInfo.x / frameData.sourceSize.x);
+                float pivotY = 1 + (frameInfo.y / frameData.sourceSize.y);
+                pivot = new Vector2(pivotX, pivotY);
+            }
+            else
+            {
+                pivot = new Vector2(0.5f, 0.5f); // 默认居中
+            }
+            
+            sheetMetas[i].pivot = pivot;
+            sheetMetas[i].alignment = (int)SpriteAlignment.Custom; // 设置为Custom类型
         }
 
         // 使用ISpriteEditorDataProvider设置精灵数据
-        #if UNITY_2020_1_OR_NEWER
         var factory = new SpriteDataProviderFactories();
         var dataProvider = factory.GetSpriteEditorDataProviderFromObject(textureImporter);
         dataProvider.InitSpriteEditorDataProvider();
@@ -281,83 +349,52 @@ public class SpriteSheetConvert : ScriptableObject
 
         dataProvider.SetSpriteRects(spriteRects.ToArray());
         dataProvider.Apply();
-        #else
-        textureImporter.isReadable = true;
-        textureImporter.textureType = TextureImporterType.Sprite;
-        textureImporter.spriteImportMode = SpriteImportMode.Multiple;
-        textureImporter.spritesheet = sheetMetas;
-        EditorUtility.SetDirty(textureImporter);
-        AssetDatabase.WriteImportSettingsIfDirty(texPath);
-        #endif
 
         AssetDatabase.ImportAsset(texPath, ImportAssetOptions.ForceUpdate);
-        // 解析mc部分
-        JObject mcData = jsonObj["mc"] as JObject;
-        FrameAnimInfo animInfo = new FrameAnimInfo();
-        
-        // 提前加载所有Sprite
-        Sprite[] allSprites = AssetDatabase.LoadAllAssetsAtPath(texPath).OfType<Sprite>().ToArray();
-        
-        if (mcData != null)
-        {
-            foreach (var animClip in mcData)
+        Debug.LogWarning("#ConvertEgretJsonToAnim output sprites end:" + selectionPath);
+        // 关联sprite
+        // 等待一帧确保Sprite数据已写入
+        EditorApplication.delayCall += () => {
+            // 提前加载所有Sprite
+            Sprite[] allSprites = AssetDatabase.LoadAllAssetsAtPath(texPath).OfType<Sprite>().ToArray();
+            
+            if (mcData != null)
             {
-                string clipName = animClip.Key;
-                JToken clipData = animClip.Value;
-                animInfo.AnimName = clipName;
-                animInfo.FrameRate = clipData["frameRate"]?.ToObject<int>() ?? 24;
-                animInfo.Loop = true; // 默认循环播放
-                
-                JArray frames = clipData["frames"] as JArray;
-                if (frames != null)
+                foreach (var animClip in anims)
                 {
-                    int i = 0;
-                    animInfo.Frames = new FrameData[frames.Count];
-                    foreach (JToken frame in frames)
+                    foreach (var frame in animClip.Frames)
                     {
-                        string resName = frame["res"].ToString();
-                        Vector2 offset = new Vector2(
-                            frame["x"]?.ToObject<float>() ?? 0,
-                            frame["y"]?.ToObject<float>() ?? 0
-                        );
                         // 从已加载的Sprite数组中查找
-                        Sprite targetSprite = allSprites.FirstOrDefault(s => s.name == resName);
+                        Sprite targetSprite = allSprites.FirstOrDefault(s => s.name == frame.res);
                         if (targetSprite == null)
                         {
-                            Debug.LogError("无法加载Sprite: " + resName);
+                            Debug.LogError("无法加载Sprite: " + frame.res);
                         }
-                        
-                        var fd = new FrameData() {
-                            res = resName,
-                            x = offset.x,
-                            y = offset.y,
-                            sprite = targetSprite  // 关联对应的Sprite
-                        }; 
-                        animInfo.Frames[i] = fd;
-                        i++;
+                        frame.sprite = targetSprite;  // 关联对应的Sprite
                     }
                 }
             }
-        }
 
-        // 创建预设
-        string prefabPath = Path.GetDirectoryName(selectionPath) + "/" + Path.GetFileNameWithoutExtension(selectionPath) + ".prefab";
-        
-        // 删除已存在的预设
-        if (File.Exists(prefabPath))
-        {
-            AssetDatabase.DeleteAsset(prefabPath);
-        }
-        
-        GameObject prefab = new GameObject(Path.GetFileNameWithoutExtension(selectionPath));
-        FrameAnimData animData = prefab.AddComponent<FrameAnimData>();
-        animData.Info = animInfo;
-        
-        // 保存预设
-        PrefabUtility.SaveAsPrefabAsset(prefab, prefabPath);
-        GameObject.DestroyImmediate(prefab);
+            // 创建预设
+            string prefabPath = Path.GetDirectoryName(selectionPath) + "/" + Path.GetFileNameWithoutExtension(selectionPath) + ".prefab";
+            
+            // 删除已存在的预设
+            if (File.Exists(prefabPath))
+            {
+                AssetDatabase.DeleteAsset(prefabPath);
+            }
+            
+            GameObject prefab = new GameObject(Path.GetFileNameWithoutExtension(selectionPath));
+            FrameAnimData animData = prefab.AddComponent<FrameAnimData>();
 
-        Debug.LogWarning("#ConvertEgretJsonToAnim end:" + texPath);
+            animData.AnimRes = new FrameAnimRes(){Infos = anims.ToList()} ;
+            
+            // 保存预设
+            PrefabUtility.SaveAsPrefabAsset(prefab, prefabPath);
+            GameObject.DestroyImmediate(prefab);
+
+            Debug.LogWarning("#ConvertEgretJsonToAnim end:" + texPath);
+        };
     }
 
 
@@ -870,7 +907,7 @@ public class SpriteSheetConvert : ScriptableObject
         }
         catch (System.Exception e)
         {
-            Debug.LogError("write file error:" + outPath+e);
+            Debug.Log("write file error:" + outPath+e);
             throw;
         }
 

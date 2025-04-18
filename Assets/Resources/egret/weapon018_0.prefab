@@ -1,0 +1,1808 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6649300933617568594
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8681898332527431511}
+  - component: {fileID: 145914724276537314}
+  m_Layer: 0
+  m_Name: weapon018_0
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8681898332527431511
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6649300933617568594}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &145914724276537314
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6649300933617568594}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 904cc5635f583a741b8cb2735260ec39, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AnimRes:
+    Infos:
+    - AnimName: weapon018_0_5w
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: D9FBCE01
+        sprite: {fileID: -3323981357338618546, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -55
+        y: -45
+      - res: 7D872204
+        sprite: {fileID: -1105632708570542486, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -58
+        y: -42
+      - res: 570617A7
+        sprite: {fileID: 6905298887284824445, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -59
+        y: -40
+      - res: 42588069
+        sprite: {fileID: 999636909453325807, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -59
+        y: -37
+      - res: 5FD92778
+        sprite: {fileID: 1671445112399875884, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -58
+        y: -40
+      - res: 809CBA49
+        sprite: {fileID: 1681876572127974457, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -56
+        y: -43
+      Loop: 1
+    - AnimName: weapon018_0_6a
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: 539333F4
+        sprite: {fileID: -965116863745047553, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -9
+        y: -110
+      - res: 304EBB2A
+        sprite: {fileID: -7963218319180538668, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: 32
+        y: -48
+      - res: 9C5CA9F7
+        sprite: {fileID: -4959186225890641753, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -5
+        y: -74
+      - res: 81529D67
+        sprite: {fileID: -851820596359883116, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -38
+        y: -119
+      - res: 128D1C36
+        sprite: {fileID: -210696684013874881, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -77
+        y: -20
+      - res: B5E90A73
+        sprite: {fileID: 4801826626186859139, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -72
+        y: -33
+      Loop: 1
+    - AnimName: weapon018_0_6c
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: 20268A9D
+        sprite: {fileID: -5927697951421574940, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -46
+        y: -95
+      - res: 191849D5
+        sprite: {fileID: 6510233392323705892, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -34
+        y: -84
+      - res: 18D80276
+        sprite: {fileID: 6591956747854051360, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -17
+        y: -78
+      - res: 24FF6A8A
+        sprite: {fileID: 6464564254205213296, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -7
+        y: -79
+      - res: 79D000B1
+        sprite: {fileID: 1113284638442451441, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -10
+        y: -108
+      - res: 792A4196
+        sprite: {fileID: -946043155518925326, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -82
+        y: -60
+      Loop: 1
+    - AnimName: weapon018_0_6d
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: 7124FDAD
+        sprite: {fileID: 1129337493580182933, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -62
+        y: -58
+      - res: 20A6469E
+        sprite: {fileID: 3403914445123243039, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -18
+        y: -56
+      - res: E755A8D8
+        sprite: {fileID: -676438137120578000, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: 39
+        y: -32
+      - res: 4B0B0F8
+        sprite: {fileID: -1392064312513332914, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: 40
+        y: -24
+      Loop: 1
+    - AnimName: weapon018_0_6h
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: 4FA3451C
+        sprite: {fileID: 4927769097940127347, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: 10
+        y: -83
+      - res: 85B5E87D
+        sprite: {fileID: -331349469425673106, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -16
+        y: -81
+      - res: 9606F6A8
+        sprite: {fileID: 7353592989977151196, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -33
+        y: -81
+      Loop: 1
+    - AnimName: weapon018_0_6r
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: 44AB0F9D
+        sprite: {fileID: -2611983655301207964, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -49
+        y: -58
+      - res: E84D53DA
+        sprite: {fileID: -955238300267834293, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -60
+        y: -60
+      - res: 822AA4BC
+        sprite: {fileID: -3466139130016262888, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -51
+        y: -78
+      - res: C89E3FB1
+        sprite: {fileID: -1102421293057427550, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -27
+        y: -85
+      - res: EEFFE208
+        sprite: {fileID: -6825664909401365537, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -60
+        y: -71
+      - res: 1F1AA97F
+        sprite: {fileID: 1725869857077742372, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -58
+        y: -57
+      Loop: 1
+    - AnimName: weapon018_0_6s
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: E4DCEC42
+        sprite: {fileID: 8924822372388352852, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -48
+        y: -41
+      - res: 729582D8
+        sprite: {fileID: 8743004498397531108, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -50
+        y: -41
+      - res: 6A122918
+        sprite: {fileID: 3775149439351587296, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -51
+        y: -41
+      - res: FC853F95
+        sprite: {fileID: -1461696488860479061, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -51
+        y: -41
+      Loop: 1
+    - AnimName: weapon018_0_6s1
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: B4407421
+        sprite: {fileID: 5297296621359763208, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -8
+        y: -107
+      Loop: 1
+    - AnimName: weapon018_0_6w
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: D73E06B3
+        sprite: {fileID: 4536724002976896502, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -44
+        y: -41
+      - res: F85AF4F
+        sprite: {fileID: 2580092414891500114, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -52
+        y: -44
+      - res: 7F56C75
+        sprite: {fileID: 6395595788823304738, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -61
+        y: -44
+      - res: 18287973
+        sprite: {fileID: 2182320112569981820, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -65
+        y: -47
+      - res: BD15B2C5
+        sprite: {fileID: 2460378183694581596, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -58
+        y: -40
+      - res: 73CB5415
+        sprite: {fileID: -4632885785545483476, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -48
+        y: -41
+      Loop: 1
+    - AnimName: weapon018_0_7a
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: 5E8C2133
+        sprite: {fileID: -4152723992079513566, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: 14
+        y: -103
+      - res: B17C2158
+        sprite: {fileID: 3026684981669647005, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: 5
+        y: -32
+      - res: 9A62BA3A
+        sprite: {fileID: 8028905006681339847, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: 8
+        y: -72
+      - res: B6ACA8E4
+        sprite: {fileID: 7752143877770690332, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -16
+        y: -115
+      - res: 45E78969
+        sprite: {fileID: -1125078432610017589, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -74
+        y: -33
+      - res: CD460F4F
+        sprite: {fileID: -4907314589474625204, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -46
+        y: -51
+      Loop: 1
+    - AnimName: weapon018_0_7c
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: EAA8FA9C
+        sprite: {fileID: 4242455316257998348, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -7
+        y: -106
+      - res: E7A0A6D0
+        sprite: {fileID: 7238364623162250380, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -31
+        y: -99
+      - res: 6EE17740
+        sprite: {fileID: -7507801911402885321, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -16
+        y: -79
+      - res: D5510D7E
+        sprite: {fileID: -3548041739729814918, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: 4
+        y: -71
+      - res: B9F18DFB
+        sprite: {fileID: -2679284592045324637, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: 1
+        y: -105
+      - res: 3559CDC6
+        sprite: {fileID: -5165403149950790837, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -45
+        y: -93
+      Loop: 1
+    - AnimName: weapon018_0_7d
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: B76D3192
+        sprite: {fileID: 4718215086988325512, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -49
+        y: -76
+      - res: AACD7A0D
+        sprite: {fileID: -9113048027020192182, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -8
+        y: -61
+      - res: 9C17FF4F
+        sprite: {fileID: -5834611258576625625, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: 11
+        y: -7
+      - res: BCB85B61
+        sprite: {fileID: -1813471233062859274, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: 48
+        y: 3
+      Loop: 1
+    - AnimName: weapon018_0_7h
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: AC369B67
+        sprite: {fileID: -7116514716873069813, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: 17
+        y: -62
+      - res: 3C07EB35
+        sprite: {fileID: 3185895650386785726, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: 12
+        y: -73
+      - res: D6473A2B
+        sprite: {fileID: -8282907087795872133, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: 10
+        y: -81
+      Loop: 1
+    - AnimName: weapon018_0_7r
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: 7EE35DAC
+        sprite: {fileID: 2887527373860327454, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -13
+        y: -73
+      - res: 91A3AB56
+        sprite: {fileID: -3178055729075825765, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -33
+        y: -83
+      - res: 5D08E539
+        sprite: {fileID: -7431180442381642252, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -37
+        y: -100
+      - res: ACDCBE0E
+        sprite: {fileID: -5357207171912921145, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -23
+        y: -96
+      - res: AA0D3679
+        sprite: {fileID: -1372887985224704998, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -39
+        y: -95
+      - res: 6A861219
+        sprite: {fileID: -6705116176201100396, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -31
+        y: -79
+      Loop: 1
+    - AnimName: weapon018_0_7s
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: 9B094A72
+        sprite: {fileID: 1026724814813086699, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -21
+        y: -45
+      - res: BBF8AC63
+        sprite: {fileID: 4729180375738363218, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -23
+        y: -48
+      - res: B6A307A7
+        sprite: {fileID: 9113309620849561161, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -24
+        y: -49
+      - res: 5C188755
+        sprite: {fileID: -3025764651847775826, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -23
+        y: -48
+      Loop: 1
+    - AnimName: weapon018_0_7s1
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: B5ED39F7
+        sprite: {fileID: -4399989041725905385, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: 9
+        y: -88
+      Loop: 1
+    - AnimName: weapon018_0_7w
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: AC72E45
+        sprite: {fileID: -9105886547220704464, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -12
+        y: -52
+      - res: C588E7E3
+        sprite: {fileID: 6525380748105616332, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -21
+        y: -62
+      - res: 14F9AFDA
+        sprite: {fileID: 1885328552944595344, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -33
+        y: -68
+      - res: 88748D3F
+        sprite: {fileID: 1277702263215878834, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -39
+        y: -74
+      - res: 360A399
+        sprite: {fileID: 1448671523249638604, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -30
+        y: -62
+      - res: 564D2EE0
+        sprite: {fileID: 7506457249240550745, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -16
+        y: -55
+      Loop: 1
+    - AnimName: weapon018_0_0a
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: D930EEC3
+        sprite: {fileID: 3129829944118637368, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: 23
+        y: -81
+      - res: F3EA444B
+        sprite: {fileID: 7350335166349801477, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -56
+        y: -26
+      - res: 23EE3E9D
+        sprite: {fileID: 8475262249976335372, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -9
+        y: -65
+      - res: F3DF675D
+        sprite: {fileID: 2197804527628319278, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: 17
+        y: -90
+      - res: FED7D201
+        sprite: {fileID: -4788871889700318906, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -28
+        y: -49
+      - res: 9533AC82
+        sprite: {fileID: 7920467305029396452, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: 6
+        y: -59
+      Loop: 1
+    - AnimName: weapon018_0_0c
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: 289FC1BE
+        sprite: {fileID: 8927731624293360902, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: 10
+        y: -97
+      - res: 87B2C75D
+        sprite: {fileID: 6469526868218093039, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -11
+        y: -107
+      - res: 381CA223
+        sprite: {fileID: 8163269096336854160, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -27
+        y: -88
+      - res: 598612E0
+        sprite: {fileID: 6644641131860295443, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -19
+        y: -67
+      - res: 8D93B32C
+        sprite: {fileID: 7959564763446051479, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: 0
+        y: -102
+      - res: FA8D3CC7
+        sprite: {fileID: 1157440840059860839, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: 8
+        y: -97
+      Loop: 1
+    - AnimName: weapon018_0_0d
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: A3FC3DDB
+        sprite: {fileID: -3990807138634865041, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -10
+        y: -89
+      - res: 9B39CAB1
+        sprite: {fileID: -4325084793723478056, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -30
+        y: -59
+      - res: 4FD56225
+        sprite: {fileID: 8190667112761068990, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -34
+        y: 13
+      - res: 90C50177
+        sprite: {fileID: -5930240913026876492, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -10
+        y: 30
+      Loop: 1
+    - AnimName: weapon018_0_0h
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: E40BA19F
+        sprite: {fileID: -1951994257789167983, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: 11
+        y: -24
+      - res: 676EE352
+        sprite: {fileID: -6060715107960449641, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: 11
+        y: -42
+      - res: 25B05283
+        sprite: {fileID: 9137202026716495408, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: 12
+        y: -56
+      Loop: 1
+    - AnimName: weapon018_0_0r
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: BF355E8F
+        sprite: {fileID: 989245678704540046, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: 14
+        y: -65
+      - res: A2437387
+        sprite: {fileID: -1943011317037313714, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: 12
+        y: -85
+      - res: B912B236
+        sprite: {fileID: -8033511540848611538, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -3
+        y: -107
+      - res: 79F4FDA4
+        sprite: {fileID: 4138957277757787397, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -7
+        y: -101
+      - res: 7DE23D6E
+        sprite: {fileID: -2970853089164646838, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: 3
+        y: -102
+      - res: B09ED216
+        sprite: {fileID: 3182073932834412281, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: 11
+        y: -80
+      Loop: 1
+    - AnimName: weapon018_0_0s
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: D56D1714
+        sprite: {fileID: 3082815449886530091, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: 12
+        y: -43
+      - res: 18C60F6
+        sprite: {fileID: -8166064139688777198, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: 12
+        y: -46
+      - res: D646CEBA
+        sprite: {fileID: 1655177732314541654, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: 12
+        y: -48
+      - res: 8FF4E46
+        sprite: {fileID: 6427971061122807826, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: 11
+        y: -47
+      Loop: 1
+    - AnimName: weapon018_0_0s1
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: D710D622
+        sprite: {fileID: 5542835409098726541, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: 21
+        y: -58
+      Loop: 1
+    - AnimName: weapon018_0_0w
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: DAE164B7
+        sprite: {fileID: -3430571894987005260, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: 10
+        y: -45
+      - res: 8F521E02
+        sprite: {fileID: -7026718267809326665, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: 10
+        y: -59
+      - res: 45C71666
+        sprite: {fileID: 216014363664080364, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: 11
+        y: -70
+      - res: AAE89C67
+        sprite: {fileID: -5182046193590249175, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: 8
+        y: -79
+      - res: 673F1C0D
+        sprite: {fileID: -8896394765281143119, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: 10
+        y: -63
+      - res: 7AB7B4E2
+        sprite: {fileID: -7816185549218442563, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: 10
+        y: -49
+      Loop: 1
+    - AnimName: weapon018_0_1a
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: BFFA9990
+        sprite: {fileID: 1472888341389566591, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: 16
+        y: -58
+      - res: 8F3451E5
+        sprite: {fileID: 8099020729530066993, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -88
+        y: -46
+      - res: 2DEB6C7
+        sprite: {fileID: 7168530516495402630, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -46
+        y: -58
+      - res: 436C856B
+        sprite: {fileID: 899402655769720685, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: 37
+        y: -63
+      - res: 90160822
+        sprite: {fileID: 2501805047182883481, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: 16
+        y: -48
+      - res: 1DF4F113
+        sprite: {fileID: 1198765075639927201, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: 14
+        y: -42
+      Loop: 1
+    - AnimName: weapon018_0_1c
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: 54EEAD23
+        sprite: {fileID: 4796597257607053401, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: 13
+        y: -73
+      - res: FBCE1339
+        sprite: {fileID: -7811645170088157866, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: 6
+        y: -107
+      - res: B0F9076B
+        sprite: {fileID: -7991305761189519751, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -26
+        y: -101
+      - res: 144313D0
+        sprite: {fileID: -1544304880773833652, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -41
+        y: -81
+      - res: 2918C676
+        sprite: {fileID: -7906816973265477985, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -5
+        y: -102
+      - res: AC58DDB2
+        sprite: {fileID: 5737791480723478272, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: 18
+        y: -72
+      Loop: 1
+    - AnimName: weapon018_0_1d
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: 49A90B84
+        sprite: {fileID: -5560921111657716526, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: 29
+        y: -82
+      - res: F066361E
+        sprite: {fileID: 3902217163858208015, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -40
+        y: -71
+      - res: 28CFE274
+        sprite: {fileID: 3325057096729791919, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -64
+        y: 6
+      - res: 228277A8
+        sprite: {fileID: -8136826653662234489, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -66
+        y: 37
+      Loop: 1
+    - AnimName: weapon018_0_1h
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: EB3F56BF
+        sprite: {fileID: 859990283078458666, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -5
+        y: -13
+      - res: 9ECC4801
+        sprite: {fileID: -2325556628908128307, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: 0
+        y: -19
+      - res: 80AB5B91
+        sprite: {fileID: -8526383035309884694, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: 5
+        y: -24
+      Loop: 1
+    - AnimName: weapon018_0_1r
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: ABC9CC1
+        sprite: {fileID: 972734229420510080, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: 0
+        y: -41
+      - res: E48D3C02
+        sprite: {fileID: -5467017574067164153, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: 7
+        y: -69
+      - res: B3A87B97
+        sprite: {fileID: 3824494069997838370, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: 17
+        y: -99
+      - res: F3D2DD8C
+        sprite: {fileID: -4876325781768723385, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: 9
+        y: -99
+      - res: 104F34AC
+        sprite: {fileID: 4275391495195771388, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: 14
+        y: -90
+      - res: 9844BDFF
+        sprite: {fileID: 6523375532244346707, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: 3
+        y: -63
+      Loop: 1
+    - AnimName: weapon018_0_1s
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: 96974D46
+        sprite: {fileID: -5207639202207059443, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: 0
+        y: -27
+      - res: 280154B
+        sprite: {fileID: -8476947435584133161, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: 1
+        y: -29
+      - res: 29100BDF
+        sprite: {fileID: 435336668257437563, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: 1
+        y: -30
+      - res: CEC17AE2
+        sprite: {fileID: -8098959478700647789, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: 1
+        y: -29
+      Loop: 1
+    - AnimName: weapon018_0_1s1
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: 3A12156D
+        sprite: {fileID: 435486387537032297, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: 17
+        y: -37
+      Loop: 1
+    - AnimName: weapon018_0_1w
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: A6161E3
+        sprite: {fileID: -924407583186033290, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -4
+        y: -25
+      - res: 367EB484
+        sprite: {fileID: -5343392014880560992, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -1
+        y: -38
+      - res: 29AB9EF6
+        sprite: {fileID: 4817357722750031452, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: 4
+        y: -52
+      - res: 6981AA96
+        sprite: {fileID: 3376045284134265742, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: 7
+        y: -62
+      - res: 4C37AC65
+        sprite: {fileID: -8296725339633103421, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: 2
+        y: -45
+      - res: 6EFD4850
+        sprite: {fileID: -4182730135312981057, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -2
+        y: -28
+      Loop: 1
+    - AnimName: weapon018_0_2a
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: 603247D8
+        sprite: {fileID: 3336109043978388929, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -2
+        y: -46
+      - res: 690DB657
+        sprite: {fileID: 1857932696130052888, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -73
+        y: -88
+      - res: B28F5991
+        sprite: {fileID: -200829741960383803, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -58
+        y: -63
+      - res: 842D462D
+        sprite: {fileID: 71998163865513295, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: 7
+        y: -46
+      - res: B4EEA934
+        sprite: {fileID: 6805161716106784796, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: 23
+        y: -23
+      - res: FAACE969
+        sprite: {fileID: 1612889729319762524, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: 8
+        y: -17
+      Loop: 1
+    - AnimName: weapon018_0_2c
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: 3E1747C9
+        sprite: {fileID: 677933841963415074, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: 9
+        y: -46
+      - res: 33C0BAE2
+        sprite: {fileID: -2701056190439043923, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: 10
+        y: -95
+      - res: F6F292B
+        sprite: {fileID: -1078719678196382171, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -12
+        y: -108
+      - res: 97C2B352
+        sprite: {fileID: 7770669267002423789, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -42
+        y: -100
+      - res: BBDDFDCD
+        sprite: {fileID: 2334389848147093200, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -10
+        y: -103
+      - res: 4B433BA4
+        sprite: {fileID: 3571866582664679348, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: 17
+        y: -34
+      Loop: 1
+    - AnimName: weapon018_0_2d
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: CDB9FB4B
+        sprite: {fileID: 7500804770187327284, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: 11
+        y: -57
+      - res: FB6F2B46
+        sprite: {fileID: -4552383604366845318, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -31
+        y: -88
+      - res: 47DB1E95
+        sprite: {fileID: -8054447441468882418, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -59
+        y: -25
+      - res: 567785E4
+        sprite: {fileID: -8286619917590162863, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -87
+        y: 5
+      Loop: 1
+    - AnimName: weapon018_0_2h
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: F9E0240E
+        sprite: {fileID: 4297830383895652478, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -21
+        y: -18
+      - res: 1F515AF8
+        sprite: {fileID: 1582959833461900933, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -11
+        y: -20
+      - res: 4F26F9BF
+        sprite: {fileID: 7066972270710396127, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -6
+        y: -21
+      Loop: 1
+    - AnimName: weapon018_0_2r
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: A4547591
+        sprite: {fileID: 6040550382025589141, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -14
+        y: -23
+      - res: 3B8559D
+        sprite: {fileID: -6532216510398324847, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -5
+        y: -39
+      - res: B9BFF4FD
+        sprite: {fileID: 1179129545908324025, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: 13
+        y: -77
+      - res: 3CF073F5
+        sprite: {fileID: -2170218859038174899, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: 16
+        y: -89
+      - res: 62967A73
+        sprite: {fileID: 7790357808834652088, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: 9
+        y: -64
+      - res: 4BA942E7
+        sprite: {fileID: 785534258470083793, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -8
+        y: -33
+      Loop: 1
+    - AnimName: weapon018_0_2s
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: CF1A9C15
+        sprite: {fileID: 1348489104589292588, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -11
+        y: -26
+      - res: 507E7FC9
+        sprite: {fileID: 2311430202763039732, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -11
+        y: -25
+      - res: 879BFDE0
+        sprite: {fileID: -3653532579681817478, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -11
+        y: -25
+      - res: 46C73EBC
+        sprite: {fileID: -8943266204957553831, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -10
+        y: -25
+      Loop: 1
+    - AnimName: weapon018_0_2s1
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: D469BB75
+        sprite: {fileID: 4524366652181788919, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -23
+        y: -35
+      Loop: 1
+    - AnimName: weapon018_0_2w
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: E14D5035
+        sprite: {fileID: 2026644195297212538, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -15
+        y: -26
+      - res: 8FD9CC82
+        sprite: {fileID: -7817918365547342613, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -12
+        y: -24
+      - res: D894BD1D
+        sprite: {fileID: 7807054740135227255, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -6
+        y: -25
+      - res: B9F76889
+        sprite: {fileID: 2887313645185680251, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -1
+        y: -29
+      - res: 1349C944
+        sprite: {fileID: 6665827197281343304, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -7
+        y: -25
+      - res: D545DEB2
+        sprite: {fileID: 6238250907259157411, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -13
+        y: -26
+      Loop: 1
+    - AnimName: weapon018_0_3a
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: 8B96B5DF
+        sprite: {fileID: 6874115792344774010, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -37
+        y: -53
+      - res: EA3CA066
+        sprite: {fileID: -7597193776626431490, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -25
+        y: -109
+      - res: 7A94B1D9
+        sprite: {fileID: 6221556722303752969, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -40
+        y: -88
+      - res: 7AE6043D
+        sprite: {fileID: -4794767995607436714, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -36
+        y: -51
+      - res: 59ED8874
+        sprite: {fileID: 2409469083668891163, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: 17
+        y: -10
+      - res: 14171282
+        sprite: {fileID: 3979355107379629292, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -4
+        y: -15
+      Loop: 1
+    - AnimName: weapon018_0_3c
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: A857BEEA
+        sprite: {fileID: -8432461961429606233, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -3
+        y: -35
+      - res: 6C300035
+        sprite: {fileID: -6794724871710934240, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: 6
+        y: -80
+      - res: E27F35BD
+        sprite: {fileID: 3561854612458738082, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: 4
+        y: -106
+      - res: 6B1FBBE2
+        sprite: {fileID: -7546491268984034541, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -21
+        y: -114
+      - res: FB9E25D7
+        sprite: {fileID: -1964898768551475207, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -11
+        y: -106
+      - res: D2FC2664
+        sprite: {fileID: -4902403821488021101, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: 6
+        y: -26
+      Loop: 1
+    - AnimName: weapon018_0_3d
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: 6D8B0C8B
+        sprite: {fileID: 7980071150507791917, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -16
+        y: -28
+      - res: 67B0F766
+        sprite: {fileID: -2460472975668897543, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -4
+        y: -94
+      - res: 75E866EA
+        sprite: {fileID: -8065735279899949210, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -49
+        y: -44
+      - res: 733A5E77
+        sprite: {fileID: -4740821276574146599, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -60
+        y: -32
+      Loop: 1
+    - AnimName: weapon018_0_3h
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: 4ABCCA49
+        sprite: {fileID: 2947063732439004036, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -67
+        y: -28
+      - res: 66F3E57D
+        sprite: {fileID: -5031426937497014548, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -47
+        y: -27
+      - res: 7FEB4B6D
+        sprite: {fileID: -979229860461625458, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -32
+        y: -25
+      Loop: 1
+    - AnimName: weapon018_0_3r
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: E80B3BAB
+        sprite: {fileID: -7919507290725245271, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -21
+        y: -32
+      - res: 36B597A6
+        sprite: {fileID: 6241954963752570723, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -14
+        y: -27
+      - res: A60FD127
+        sprite: {fileID: -4873946884886746050, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: 1
+        y: -55
+      - res: 83A68A2
+        sprite: {fileID: 7987192252590941724, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: 7
+        y: -78
+      - res: 5F38DF93
+        sprite: {fileID: -8979372470192785627, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -2
+        y: -38
+      - res: E6E49D94
+        sprite: {fileID: 6851800940061028371, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -14
+        y: -30
+      Loop: 1
+    - AnimName: weapon018_0_3s
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: 59F34FBF
+        sprite: {fileID: 8567240075193098598, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -16
+        y: -32
+      - res: C061B5A7
+        sprite: {fileID: 5465539677848417640, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -16
+        y: -32
+      - res: C7D20A25
+        sprite: {fileID: -730179012947670431, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -17
+        y: -32
+      - res: 93419031
+        sprite: {fileID: -569394307682243366, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -16
+        y: -32
+      Loop: 1
+    - AnimName: weapon018_0_3s1
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: 9801319A
+        sprite: {fileID: -3945791354647732664, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -57
+        y: -53
+      Loop: 1
+    - AnimName: weapon018_0_3w
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: CDBE6B48
+        sprite: {fileID: 4173570892896264341, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -18
+        y: -34
+      - res: C9E64232
+        sprite: {fileID: 4189745849998576632, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -17
+        y: -31
+      - res: A216B9B4
+        sprite: {fileID: -5059530943404588049, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -13
+        y: -28
+      - res: A38FDB93
+        sprite: {fileID: -6313371099612749499, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -9
+        y: -25
+      - res: 6E2CE875
+        sprite: {fileID: 1402043689266527521, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -13
+        y: -29
+      - res: 7898859
+        sprite: {fileID: -7430560485271962575, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -16
+        y: -33
+      Loop: 1
+    - AnimName: weapon018_0_4a
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: 3B182C8C
+        sprite: {fileID: -29731510030928792, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -56
+        y: -76
+      - res: 9A98CD96
+        sprite: {fileID: 1885949087844707370, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -2
+        y: -98
+      - res: C89DE62F
+        sprite: {fileID: -3170798519775996073, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -19
+        y: -96
+      - res: B8EA1846
+        sprite: {fileID: 6802088129879068033, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -62
+        y: -75
+      - res: 22CF6444
+        sprite: {fileID: 8599332769106308081, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -1
+        y: -5
+      - res: 419500E0
+        sprite: {fileID: -858816727793485314, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -17
+        y: -19
+      Loop: 1
+    - AnimName: weapon018_0_4c
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: 560DFCA4
+        sprite: {fileID: 6718113357814294483, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -44
+        y: -45
+      - res: E641E74C
+        sprite: {fileID: -6408972217464766403, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -3
+        y: -72
+      - res: 12EDF486
+        sprite: {fileID: 233056363371395437, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -6
+        y: -98
+      - res: E1C6F93D
+        sprite: {fileID: -4467236067146518824, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -16
+        y: -115
+      - res: 46003A5F
+        sprite: {fileID: 1219121258350393704, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -19
+        y: -109
+      - res: F8D9A8D0
+        sprite: {fileID: -5448761634170012685, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -29
+        y: -27
+      Loop: 1
+    - AnimName: weapon018_0_4d
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: C33A89F1
+        sprite: {fileID: 1011099263446270097, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -35
+        y: -29
+      - res: FC46345F
+        sprite: {fileID: -4282165205813547375, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -13
+        y: -88
+      - res: 8DD97B7
+        sprite: {fileID: 6302715197586281884, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -28
+        y: -45
+      - res: A2B6CFE4
+        sprite: {fileID: 1961084994739239461, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -40
+        y: -46
+      Loop: 1
+    - AnimName: weapon018_0_4h
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: 4DEB3D79
+        sprite: {fileID: 9081272954006744516, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -76
+        y: -46
+      - res: AB16C0BB
+        sprite: {fileID: -3826838129910675103, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -74
+        y: -35
+      - res: B6D2F983
+        sprite: {fileID: 255706027162649408, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -70
+        y: -33
+      Loop: 1
+    - AnimName: weapon018_0_4r
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: B1CC5E7A
+        sprite: {fileID: -8604954325140069346, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -41
+        y: -42
+      - res: E71C9B4
+        sprite: {fileID: 3024761475757161864, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -22
+        y: -34
+      - res: 49C714D4
+        sprite: {fileID: 5868432730571855888, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -13
+        y: -48
+      - res: FB0C6D6D
+        sprite: {fileID: -7364431363751044011, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -10
+        y: -73
+      - res: 7386BA34
+        sprite: {fileID: -883418209024412251, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -15
+        y: -32
+      - res: 2E3B965C
+        sprite: {fileID: -7284120210873722585, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -24
+        y: -38
+      Loop: 1
+    - AnimName: weapon018_0_4s
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: C97B1667
+        sprite: {fileID: -1159092202732588531, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -27
+        y: -40
+      - res: 52190925
+        sprite: {fileID: -5132094134194334860, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -27
+        y: -39
+      - res: E3B116A8
+        sprite: {fileID: -841169115520805347, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -27
+        y: -39
+      - res: 444A1C48
+        sprite: {fileID: -5250490628578920007, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -27
+        y: -39
+      Loop: 1
+    - AnimName: weapon018_0_4s1
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: 316E5DEA
+        sprite: {fileID: -4958825941595697739, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -61
+        y: -83
+      Loop: 1
+    - AnimName: weapon018_0_4w
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: 7940B6D8
+        sprite: {fileID: -3311429731666071905, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -37
+        y: -42
+      - res: 4C4B45AA
+        sprite: {fileID: 2053673797937476981, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -32
+        y: -39
+      - res: 58D1B830
+        sprite: {fileID: -6111967702934775097, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -24
+        y: -34
+      - res: 15493915
+        sprite: {fileID: -923736718979045057, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -19
+        y: -31
+      - res: 3DB5465C
+        sprite: {fileID: 2537948695320779099, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -25
+        y: -35
+      - res: 501EF3BE
+        sprite: {fileID: 6173455338854292199, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -35
+        y: -40
+      Loop: 1
+    - AnimName: weapon018_0_5a
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: 48ABDBB1
+        sprite: {fileID: 8248510389552142438, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -44
+        y: -100
+      - res: 467E7BC1
+        sprite: {fileID: -1348519948144238293, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: 22
+        y: -66
+      - res: BABD8F4A
+        sprite: {fileID: -4328677927312397523, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -16
+        y: -84
+      - res: 7B3060BA
+        sprite: {fileID: 2787968639983509907, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -54
+        y: -103
+      - res: 18A690E8
+        sprite: {fileID: -2660632343814605936, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -40
+        y: -10
+      - res: 61F01C26
+        sprite: {fileID: -5104684682354454421, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -61
+        y: -28
+      Loop: 1
+    - AnimName: weapon018_0_5c
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: 1950A4C7
+        sprite: {fileID: -389009631819486878, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -61
+        y: -71
+      - res: A91020EC
+        sprite: {fileID: -8934083646165672855, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -20
+        y: -74
+      - res: E1D64ABF
+        sprite: {fileID: -124708550860016065, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -15
+        y: -87
+      - res: BF6BF116
+        sprite: {fileID: -2641213012372638918, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -16
+        y: -102
+      - res: C2E7F74F
+        sprite: {fileID: 9166547104961069002, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -20
+        y: -111
+      - res: 6F528188
+        sprite: {fileID: 1929393514885365052, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -77
+        y: -35
+      Loop: 1
+    - AnimName: weapon018_0_5d
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: CEAA5226
+        sprite: {fileID: -2809805218134081390, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -41
+        y: -47
+      - res: B566CB64
+        sprite: {fileID: 8558906187335791486, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -22
+        y: -71
+      - res: 5D90E678
+        sprite: {fileID: 7870776534528166826, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: 9
+        y: -48
+      - res: 5A9B0511
+        sprite: {fileID: -6059929964745048363, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: 1
+        y: -38
+      Loop: 1
+    - AnimName: weapon018_0_5h
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: 428D417
+        sprite: {fileID: -7495563874377290010, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -46
+        y: -78
+      - res: 4BB84089
+        sprite: {fileID: -4229037284233201346, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -61
+        y: -65
+      - res: D3E9FD18
+        sprite: {fileID: -5790625757108395076, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -70
+        y: -56
+      Loop: 1
+    - AnimName: weapon018_0_5r
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: 52969AF2
+        sprite: {fileID: 3311027497245325578, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -62
+        y: -46
+      - res: 3FDA8473
+        sprite: {fileID: 6458985558906327726, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -56
+        y: -42
+      - res: 333E843
+        sprite: {fileID: 4803049336852906119, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -39
+        y: -58
+      - res: 8AB761FB
+        sprite: {fileID: -2246218673305788998, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -23
+        y: -77
+      - res: 857376A2
+        sprite: {fileID: 5452069121791744037, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -49
+        y: -46
+      - res: DEC9B07E
+        sprite: {fileID: 8559372233543542045, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -57
+        y: -43
+      Loop: 1
+    - AnimName: weapon018_0_5s
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: C30DCD70
+        sprite: {fileID: 6637552802646228590, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -51
+        y: -44
+      - res: D9675EAD
+        sprite: {fileID: -8597934911255265766, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -53
+        y: -44
+      - res: B3EF15F5
+        sprite: {fileID: 2236239619955494651, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -53
+        y: -44
+      - res: CCE3132A
+        sprite: {fileID: 216188899540849712, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -53
+        y: -44
+      Loop: 1
+    - AnimName: weapon018_0_5s1
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: E0DB0040
+        sprite: {fileID: -6693426051659093207, guid: 81f234763b5513a4b807b58d671923e3,
+          type: 3}
+        x: -33
+        y: -105
+      Loop: 1

@@ -1,0 +1,1808 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4681375261535801589
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2454449048280162595}
+  - component: {fileID: 5056631920259973368}
+  m_Layer: 0
+  m_Name: body003_0
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2454449048280162595
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4681375261535801589}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5056631920259973368
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4681375261535801589}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 904cc5635f583a741b8cb2735260ec39, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AnimRes:
+    Infos:
+    - AnimName: body003_0_1c
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: A73A3792
+        sprite: {fileID: 2102052434641160448, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -28
+        y: -58
+      - res: 681DED0A
+        sprite: {fileID: -3345882459748556624, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -29
+        y: -58
+      - res: 97A086CF
+        sprite: {fileID: 6339736806760559877, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -30
+        y: -65
+      - res: CA6B57B9
+        sprite: {fileID: 6985649951050734378, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -36
+        y: -63
+      - res: 77BFFA21
+        sprite: {fileID: 7058261472177395106, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -34
+        y: -63
+      - res: 64B3367F
+        sprite: {fileID: 1056857936380053470, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -41
+        y: -61
+      Loop: 1
+    - AnimName: body003_0_1d
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: B3A29C8
+        sprite: {fileID: 9087239759528467352, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -20
+        y: -64
+      - res: F1183908
+        sprite: {fileID: -4743359160345621689, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -26
+        y: -57
+      - res: 5986F3E9
+        sprite: {fileID: 7430740070312614800, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -32
+        y: -35
+      - res: 118D9C33
+        sprite: {fileID: 7200059823250597838, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -55
+        y: -31
+      Loop: 1
+    - AnimName: body003_0_1h
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: B03DB346
+        sprite: {fileID: 7675366265949125134, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -27
+        y: -49
+      - res: 8E47828D
+        sprite: {fileID: -3242494156392499906, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -31
+        y: -56
+      - res: 113839FC
+        sprite: {fileID: -2755287620258779059, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -29
+        y: -63
+      Loop: 1
+    - AnimName: body003_0_1r
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: A2C8566B
+        sprite: {fileID: 5308009556156118274, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -54
+        y: -63
+      - res: 8DCCC5C0
+        sprite: {fileID: 6637190258425332995, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -58
+        y: -63
+      - res: 2B8C9C4B
+        sprite: {fileID: 3411537169406811982, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -50
+        y: -65
+      - res: 9EF6109
+        sprite: {fileID: 7965989146650139579, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -52
+        y: -63
+      - res: FC896230
+        sprite: {fileID: 8007816978795622191, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -40
+        y: -63
+      - res: 5D1361E4
+        sprite: {fileID: 1036046888657997295, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -46
+        y: -65
+      Loop: 1
+    - AnimName: body003_0_1s
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: 81B30E1C
+        sprite: {fileID: 3774500264211637724, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -24
+        y: -62
+      - res: 4C44AC58
+        sprite: {fileID: -1941345017106780523, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -24
+        y: -62
+      - res: B75C448D
+        sprite: {fileID: 2486650666952591601, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -27
+        y: -63
+      - res: DF300D39
+        sprite: {fileID: -8127794856044007511, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -25
+        y: -63
+      Loop: 1
+    - AnimName: body003_0_1s1
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: 6F999873
+        sprite: {fileID: 5458496758141340244, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -26
+        y: -57
+      Loop: 1
+    - AnimName: body003_0_1w
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: EC76588
+        sprite: {fileID: -4635572076186562531, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -29
+        y: -62
+      - res: C6654D50
+        sprite: {fileID: -99099620834403287, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -29
+        y: -62
+      - res: 9CC2D9AB
+        sprite: {fileID: -5016885040669720425, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -28
+        y: -63
+      - res: AB5D196F
+        sprite: {fileID: 8096212793668194047, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -30
+        y: -62
+      - res: F32A9124
+        sprite: {fileID: -7781798575508617617, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -29
+        y: -62
+      - res: 3A3124EC
+        sprite: {fileID: -1077711201909888183, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -27
+        y: -63
+      Loop: 1
+    - AnimName: body003_0_2a
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: A19B7E8D
+        sprite: {fileID: 3749390187450677055, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -42
+        y: -54
+      - res: A14A1857
+        sprite: {fileID: 5774151426619527476, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -42
+        y: -56
+      - res: 5DEE14A3
+        sprite: {fileID: -6814951697493141722, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -37
+        y: -55
+      - res: EB84AF3
+        sprite: {fileID: -2726980058271600487, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -40
+        y: -57
+      - res: CB55F461
+        sprite: {fileID: -4422074070003718633, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -41
+        y: -55
+      - res: C7CA4297
+        sprite: {fileID: 5594949711869866547, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -40
+        y: -51
+      Loop: 1
+    - AnimName: body003_0_2c
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: E59C836D
+        sprite: {fileID: -8755130296159424299, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -23
+        y: -59
+      - res: B2155DE8
+        sprite: {fileID: -4989882309655592714, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -24
+        y: -60
+      - res: 3631EFBF
+        sprite: {fileID: -4382799137188391373, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -21
+        y: -59
+      - res: F60F4ED
+        sprite: {fileID: 1120436464630573402, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -31
+        y: -61
+      - res: 1D01FFBE
+        sprite: {fileID: -3512750538220095433, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -33
+        y: -60
+      - res: 6FC2DB7E
+        sprite: {fileID: -6883591600083046643, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -39
+        y: -59
+      Loop: 1
+    - AnimName: body003_0_2d
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: 611C2AAD
+        sprite: {fileID: -4444947661865190947, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -16
+        y: -60
+      - res: 301B9AA0
+        sprite: {fileID: -268432252629517294, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -22
+        y: -56
+      - res: B800036B
+        sprite: {fileID: -2591924476150706332, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -47
+        y: -33
+      - res: 6D548066
+        sprite: {fileID: -7230419395715558028, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -60
+        y: -17
+      Loop: 1
+    - AnimName: body003_0_2h
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: 1873ECD9
+        sprite: {fileID: -7250502962932567118, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -27
+        y: -55
+      - res: 35AD4583
+        sprite: {fileID: -6854229062556891579, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -29
+        y: -57
+      - res: A5F0967F
+        sprite: {fileID: -2597995936813640110, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -28
+        y: -61
+      Loop: 1
+    - AnimName: body003_0_2r
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: 228C88
+        sprite: {fileID: 7098032436703023567, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -54
+        y: -62
+      - res: 7B6DC626
+        sprite: {fileID: 1453677364524617755, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -51
+        y: -62
+      - res: B3707881
+        sprite: {fileID: 3359139455309181222, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -53
+        y: -63
+      - res: 8646E7B8
+        sprite: {fileID: -7104947320059863874, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -61
+        y: -61
+      - res: 84DC5480
+        sprite: {fileID: 76981868625157591, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -50
+        y: -61
+      - res: 3255262C
+        sprite: {fileID: -8270911366894612038, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -49
+        y: -63
+      Loop: 1
+    - AnimName: body003_0_2s
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: CAAC1423
+        sprite: {fileID: -6664464585350564270, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -17
+        y: -62
+      - res: 4AA52E00
+        sprite: {fileID: 3985213791259610681, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -18
+        y: -61
+      - res: E9E2E45D
+        sprite: {fileID: -7181836579285227739, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -21
+        y: -62
+      - res: 46D71ED2
+        sprite: {fileID: 1596106956087467434, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -21
+        y: -62
+      Loop: 1
+    - AnimName: body003_0_2s1
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: 51E8B78C
+        sprite: {fileID: -8812814150741752141, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -34
+        y: -55
+      Loop: 1
+    - AnimName: body003_0_2w
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: 6CD92DD9
+        sprite: {fileID: -4850373618570462178, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -29
+        y: -61
+      - res: 89A5E353
+        sprite: {fileID: 8527533779582697013, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -30
+        y: -61
+      - res: 6772D39D
+        sprite: {fileID: -6247880570706133335, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -28
+        y: -62
+      - res: F274FEC1
+        sprite: {fileID: 6641265964689833061, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -30
+        y: -61
+      - res: 6D3572A0
+        sprite: {fileID: 4141018539530224704, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -30
+        y: -61
+      - res: 15F3DB1D
+        sprite: {fileID: -1644364618483367259, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -29
+        y: -62
+      Loop: 1
+    - AnimName: body003_0_3a
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: 853B4A69
+        sprite: {fileID: -6853884279142288204, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -41
+        y: -56
+      - res: BAB61B5
+        sprite: {fileID: -4245114304567353444, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -26
+        y: -73
+      - res: F357BC8D
+        sprite: {fileID: -4533008082485282495, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -34
+        y: -60
+      - res: D2E0ED07
+        sprite: {fileID: -1432835001172334075, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -37
+        y: -49
+      - res: C961CA77
+        sprite: {fileID: -3896466002346461899, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -43
+        y: -49
+      - res: 702BACB7
+        sprite: {fileID: -2478063200190441341, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -43
+        y: -48
+      Loop: 1
+    - AnimName: body003_0_3c
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: 148A7BA1
+        sprite: {fileID: 2994288089471086065, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -28
+        y: -58
+      - res: E0AE80F5
+        sprite: {fileID: 8251807186970444716, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -29
+        y: -59
+      - res: 82F08BFA
+        sprite: {fileID: -3698022908476465129, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -28
+        y: -60
+      - res: D163EDEE
+        sprite: {fileID: 4294547419621867036, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -29
+        y: -63
+      - res: 24E94647
+        sprite: {fileID: -761771243039533053, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -32
+        y: -60
+      - res: 469D5CF2
+        sprite: {fileID: -15873878491169605, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -31
+        y: -60
+      Loop: 1
+    - AnimName: body003_0_3d
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: 823C6BE2
+        sprite: {fileID: 6457913169821616793, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -24
+        y: -51
+      - res: CE679AFB
+        sprite: {fileID: -8475261004115076572, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -26
+        y: -60
+      - res: C0C1D7C2
+        sprite: {fileID: 7944561182202947310, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -46
+        y: -44
+      - res: EA6344D5
+        sprite: {fileID: -4220661265263488053, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -60
+        y: -36
+      Loop: 1
+    - AnimName: body003_0_3h
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: FEE649C8
+        sprite: {fileID: 6451380359904963199, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -38
+        y: -65
+      - res: E7227BFC
+        sprite: {fileID: 6733605875526739552, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -35
+        y: -63
+      - res: C1A9ACEF
+        sprite: {fileID: -1140145891016712131, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -27
+        y: -60
+      Loop: 1
+    - AnimName: body003_0_3r
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: B440D33
+        sprite: {fileID: 5806938126364838055, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -43
+        y: -65
+      - res: 1E5F73F6
+        sprite: {fileID: 1764536987526815364, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -41
+        y: -66
+      - res: 57BBBF91
+        sprite: {fileID: 8391897953888283066, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -44
+        y: -62
+      - res: 7A4CABF5
+        sprite: {fileID: -1392744975804848973, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -49
+        y: -66
+      - res: 6FD08CB8
+        sprite: {fileID: 8626551487066117731, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -49
+        y: -60
+      - res: 577C9DB3
+        sprite: {fileID: 673669308485184667, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -48
+        y: -61
+      Loop: 1
+    - AnimName: body003_0_3s
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: 5934BEB7
+        sprite: {fileID: 3537552987151639414, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -21
+        y: -61
+      - res: 8841A6C0
+        sprite: {fileID: 7569795592396921033, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -21
+        y: -61
+      - res: 4CB85959
+        sprite: {fileID: 3893715291602554030, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -23
+        y: -61
+      - res: D2EEFEFC
+        sprite: {fileID: -1842546549484111109, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -25
+        y: -61
+      Loop: 1
+    - AnimName: body003_0_3s1
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: A4599D5E
+        sprite: {fileID: -2450071267604007434, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -29
+        y: -55
+      Loop: 1
+    - AnimName: body003_0_3w
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: 3FE570C1
+        sprite: {fileID: -1292050715716140611, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -32
+        y: -60
+      - res: 109A6E59
+        sprite: {fileID: -3529304058049206814, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -28
+        y: -61
+      - res: 2F620FDD
+        sprite: {fileID: -2461492282204012244, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -27
+        y: -61
+      - res: F1F36EE8
+        sprite: {fileID: 3038547305072318435, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -27
+        y: -60
+      - res: 267E10A0
+        sprite: {fileID: -3671673655818100530, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -29
+        y: -61
+      - res: 9278FF71
+        sprite: {fileID: -9030358735100614071, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -33
+        y: -61
+      Loop: 1
+    - AnimName: body003_0_4a
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: 63004F6A
+        sprite: {fileID: -2608850496382067063, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -31
+        y: -59
+      - res: 838928F
+        sprite: {fileID: 4799931037792194670, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -18
+        y: -77
+      - res: 3C3406B1
+        sprite: {fileID: 3047855066686812908, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -21
+        y: -68
+      - res: 82979F5D
+        sprite: {fileID: 4836279575322556904, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -33
+        y: -51
+      - res: ECD7BFF1
+        sprite: {fileID: 5350649496359407216, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -45
+        y: -58
+      - res: 6686636C
+        sprite: {fileID: -3016724400789805468, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -42
+        y: -51
+      Loop: 1
+    - AnimName: body003_0_4c
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: 38889170
+        sprite: {fileID: -7638615599241862605, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -23
+        y: -60
+      - res: 678E167B
+        sprite: {fileID: 7350368596672492373, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -23
+        y: -60
+      - res: 28147202
+        sprite: {fileID: -2648859914341810759, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -23
+        y: -61
+      - res: E193F4DF
+        sprite: {fileID: 8403499096586083561, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -23
+        y: -67
+      - res: 8EA56F74
+        sprite: {fileID: 5884419207668385364, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -22
+        y: -62
+      - res: 31128A1C
+        sprite: {fileID: 8001635574855355638, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -21
+        y: -58
+      Loop: 1
+    - AnimName: body003_0_4d
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: 937404C2
+        sprite: {fileID: 4385065420345099139, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -31
+        y: -48
+      - res: 484C3348
+        sprite: {fileID: -7638295461185899415, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -29
+        y: -58
+      - res: 77C7BB4F
+        sprite: {fileID: 6278409475843959434, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -27
+        y: -52
+      - res: 246FA95
+        sprite: {fileID: -6211291199330050114, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -36
+        y: -39
+      Loop: 1
+    - AnimName: body003_0_4h
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: D75D4702
+        sprite: {fileID: -4496023453668475550, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -39
+        y: -68
+      - res: 90111D47
+        sprite: {fileID: 5755970059951042339, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -32
+        y: -65
+      - res: 44D057D0
+        sprite: {fileID: 2022556825767002505, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -23
+        y: -60
+      Loop: 1
+    - AnimName: body003_0_4r
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: 37C78062
+        sprite: {fileID: 5393471518674530549, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -21
+        y: -66
+      - res: CDF4F1EF
+        sprite: {fileID: -5412456072824855630, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -18
+        y: -63
+      - res: A1C735C2
+        sprite: {fileID: 6762011354521433081, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -23
+        y: -65
+      - res: C3B279F7
+        sprite: {fileID: -68906686706179553, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -30
+        y: -69
+      - res: A6413186
+        sprite: {fileID: 7227699187737528902, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -38
+        y: -62
+      - res: 993694C0
+        sprite: {fileID: 6029200059793643230, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -30
+        y: -65
+      Loop: 1
+    - AnimName: body003_0_4s
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: ED3911A3
+        sprite: {fileID: 4606412368535087228, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -17
+        y: -61
+      - res: C9965524
+        sprite: {fileID: -7566476086104148195, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -17
+        y: -61
+      - res: 174B41EA
+        sprite: {fileID: 7058254780849073860, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -21
+        y: -61
+      - res: A199B3BE
+        sprite: {fileID: 6669118949822530504, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -24
+        y: -61
+      Loop: 1
+    - AnimName: body003_0_4s1
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: A84B285D
+        sprite: {fileID: 2638151624516622256, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -30
+        y: -56
+      Loop: 1
+    - AnimName: body003_0_4w
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: 7AF7D445
+        sprite: {fileID: -7432027610800585634, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -24
+        y: -60
+      - res: 5998358B
+        sprite: {fileID: -4854897540564253547, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -18
+        y: -61
+      - res: 12EE63E9
+        sprite: {fileID: -380272534742662593, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -20
+        y: -61
+      - res: 31A3CFFD
+        sprite: {fileID: -293689756474391046, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -22
+        y: -60
+      - res: 4D360A43
+        sprite: {fileID: 6324956879172882765, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -21
+        y: -61
+      - res: A4E1299B
+        sprite: {fileID: -8894228497181987700, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -28
+        y: -61
+      Loop: 1
+    - AnimName: body003_0_5a
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: 21F12A86
+        sprite: {fileID: 3452278522642488650, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -25
+        y: -61
+      - res: F887ABF6
+        sprite: {fileID: 8542612536701331036, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -22
+        y: -66
+      - res: 41E10A08
+        sprite: {fileID: 9127980119413040286, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -21
+        y: -73
+      - res: E1644E10
+        sprite: {fileID: 1361108241677228347, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -43
+        y: -54
+      - res: 3C038835
+        sprite: {fileID: -9153977783090597039, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -36
+        y: -63
+      - res: 10C16225
+        sprite: {fileID: -1455790962139648665, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -27
+        y: -48
+      Loop: 1
+    - AnimName: body003_0_5c
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: 76FFE605
+        sprite: {fileID: 4504901868835601846, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -24
+        y: -61
+      - res: 3230587E
+        sprite: {fileID: -8569551284782241358, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -15
+        y: -61
+      - res: 4A3AF8FA
+        sprite: {fileID: -431217754512174080, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -17
+        y: -62
+      - res: 6C835359
+        sprite: {fileID: -6146804180701220888, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -14
+        y: -72
+      - res: 5148BC4E
+        sprite: {fileID: 710286082594424465, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -19
+        y: -71
+      - res: F057B20F
+        sprite: {fileID: -8998205123540233187, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -30
+        y: -60
+      Loop: 1
+    - AnimName: body003_0_5d
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: 8CEF670A
+        sprite: {fileID: -245722318572980685, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -37
+        y: -54
+      - res: 4B539F5
+        sprite: {fileID: -7497536382918146042, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -23
+        y: -59
+      - res: ACDC9DDC
+        sprite: {fileID: -7533636515697249629, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -38
+        y: -45
+      - res: A50BEF78
+        sprite: {fileID: -4704039065094703213, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -39
+        y: -37
+      Loop: 1
+    - AnimName: body003_0_5h
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: 7131E904
+        sprite: {fileID: 4005059632756644598, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -17
+        y: -62
+      - res: E0E76F85
+        sprite: {fileID: -4630093609239428669, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -13
+        y: -63
+      - res: 3D88E422
+        sprite: {fileID: 8207081350694317115, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -18
+        y: -61
+      Loop: 1
+    - AnimName: body003_0_5r
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: CCFA1C6C
+        sprite: {fileID: 2957584250404921022, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -20
+        y: -61
+      - res: 57B46B13
+        sprite: {fileID: -4882147730686508898, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -18
+        y: -61
+      - res: F2C5D6E3
+        sprite: {fileID: 181940137473201743, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -24
+        y: -61
+      - res: E8D0BEB5
+        sprite: {fileID: -7420993434563850989, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -23
+        y: -64
+      - res: 744E208A
+        sprite: {fileID: 4300099550294711736, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -23
+        y: -62
+      - res: 7D33E13B
+        sprite: {fileID: -7449472746739907918, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -17
+        y: -62
+      Loop: 1
+    - AnimName: body003_0_5s
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: A95868FB
+        sprite: {fileID: -8449495667518488285, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -12
+        y: -61
+      - res: 82DCFB69
+        sprite: {fileID: -8203781704460197933, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -13
+        y: -61
+      - res: DD90E1A9
+        sprite: {fileID: 5055886873454063804, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -13
+        y: -61
+      - res: 30269F73
+        sprite: {fileID: 1151190569991720066, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -13
+        y: -61
+      Loop: 1
+    - AnimName: body003_0_5s1
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: FA6350AB
+        sprite: {fileID: 1202332677537987056, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -25
+        y: -57
+      Loop: 1
+    - AnimName: body003_0_5w
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: 8F3F50AB
+        sprite: {fileID: -323780242176880423, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -21
+        y: -61
+      - res: 92221281
+        sprite: {fileID: -1199761270034638170, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -14
+        y: -61
+      - res: E0F3209C
+        sprite: {fileID: 1611131196740374041, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -16
+        y: -61
+      - res: 12136D7C
+        sprite: {fileID: 1380615157802541421, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -18
+        y: -60
+      - res: 7E988EA0
+        sprite: {fileID: 1323199177259226997, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -14
+        y: -61
+      - res: F0EAEF84
+        sprite: {fileID: 3516101495952173877, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -14
+        y: -61
+      Loop: 1
+    - AnimName: body003_0_6a
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: AB6C8B8B
+        sprite: {fileID: -3596402347892829697, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -26
+        y: -59
+      - res: 54EFE1F2
+        sprite: {fileID: -5419679512833395277, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -28
+        y: -50
+      - res: E109AF56
+        sprite: {fileID: -7109945779050514752, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -34
+        y: -73
+      - res: EC8122B5
+        sprite: {fileID: 6498222739859669961, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -36
+        y: -70
+      - res: DCD97EBC
+        sprite: {fileID: -7998593580191775529, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -36
+        y: -56
+      - res: 6CB45013
+        sprite: {fileID: -5097954263567108837, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -26
+        y: -57
+      Loop: 1
+    - AnimName: body003_0_6c
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: 674667FE
+        sprite: {fileID: 3372561726718534518, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -18
+        y: -61
+      - res: FE09A3CA
+        sprite: {fileID: 5750553949628451656, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -17
+        y: -60
+      - res: B1CB8145
+        sprite: {fileID: 5156359972037129724, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -17
+        y: -61
+      - res: B45A5A71
+        sprite: {fileID: 3928951360404503030, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -18
+        y: -73
+      - res: A77E1A7E
+        sprite: {fileID: -7247028286929202373, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -17
+        y: -77
+      - res: 64DB81D9
+        sprite: {fileID: -2915483136759862415, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -30
+        y: -61
+      Loop: 1
+    - AnimName: body003_0_6d
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: D1A405BE
+        sprite: {fileID: 2944862589737191266, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -26
+        y: -61
+      - res: 9CF732EC
+        sprite: {fileID: 7601062376224519918, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -19
+        y: -59
+      - res: E3D50BCF
+        sprite: {fileID: -8529944407792848682, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -32
+        y: -42
+      - res: 41769D88
+        sprite: {fileID: 5387508361068773113, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -39
+        y: -20
+      Loop: 1
+    - AnimName: body003_0_6h
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: CC8C45E4
+        sprite: {fileID: 998653827422215198, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -15
+        y: -53
+      - res: 8B0F7B50
+        sprite: {fileID: 934505502131614949, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -17
+        y: -57
+      - res: 451CFA01
+        sprite: {fileID: 6763055847590022200, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -23
+        y: -61
+      Loop: 1
+    - AnimName: body003_0_6r
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: 76EED66F
+        sprite: {fileID: 4080735627287815711, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -24
+        y: -59
+      - res: ACE0B947
+        sprite: {fileID: -3793909478244066909, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -21
+        y: -60
+      - res: C1516202
+        sprite: {fileID: -3020881426265103657, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -23
+        y: -62
+      - res: 251C7335
+        sprite: {fileID: 1515089529394424839, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -24
+        y: -61
+      - res: 7897F9FD
+        sprite: {fileID: -7232814696811321708, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -20
+        y: -61
+      - res: D1A8E7D7
+        sprite: {fileID: 6276494192771159029, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -23
+        y: -62
+      Loop: 1
+    - AnimName: body003_0_6s
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: E8791575
+        sprite: {fileID: -7203591702053447660, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -12
+        y: -61
+      - res: 17A6FD68
+        sprite: {fileID: 7368887136909913612, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -12
+        y: -61
+      - res: 80B767AD
+        sprite: {fileID: 2792539433987817864, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -12
+        y: -61
+      - res: 29264FB9
+        sprite: {fileID: 7472551635076187721, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -12
+        y: -61
+      Loop: 1
+    - AnimName: body003_0_6s1
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: FA4D134A
+        sprite: {fileID: 3756804382929074114, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -28
+        y: -58
+      Loop: 1
+    - AnimName: body003_0_6w
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: C4AD02C9
+        sprite: {fileID: -4487740765416157782, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -23
+        y: -61
+      - res: D1DA8571
+        sprite: {fileID: -8540759114881927122, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -13
+        y: -61
+      - res: 350EE1F4
+        sprite: {fileID: 7176544236838369992, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -15
+        y: -61
+      - res: 2F9F0581
+        sprite: {fileID: -1326432241160121394, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -23
+        y: -61
+      - res: 9782AA46
+        sprite: {fileID: 2960976394538937070, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -13
+        y: -61
+      - res: 2DFE15D2
+        sprite: {fileID: 5776946082334053145, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -14
+        y: -61
+      Loop: 1
+    - AnimName: body003_0_7a
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: F80B229A
+        sprite: {fileID: -1724529823562861375, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -25
+        y: -56
+      - res: ABE5D7E7
+        sprite: {fileID: -3052698825048179711, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -27
+        y: -53
+      - res: F7117943
+        sprite: {fileID: 8523633359373460824, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -30
+        y: -67
+      - res: A5D085DA
+        sprite: {fileID: 3412555723714228894, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -32
+        y: -81
+      - res: BF62201D
+        sprite: {fileID: -6312901301011294659, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -29
+        y: -58
+      - res: D0241740
+        sprite: {fileID: -6801834353024485794, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -26
+        y: -62
+      Loop: 1
+    - AnimName: body003_0_7c
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: 2BCCB7B8
+        sprite: {fileID: -553256950068423013, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -20
+        y: -59
+      - res: A6F9D6CB
+        sprite: {fileID: -8572042248863505822, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -20
+        y: -59
+      - res: DADB2814
+        sprite: {fileID: 1389098607570277822, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -20
+        y: -64
+      - res: E861393E
+        sprite: {fileID: -3330812682713146218, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -27
+        y: -71
+      - res: D4670BDB
+        sprite: {fileID: -8163389770040226333, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -27
+        y: -76
+      - res: F648BE8F
+        sprite: {fileID: -3576570911086365008, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -24
+        y: -62
+      Loop: 1
+    - AnimName: body003_0_7d
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: FF6EF82F
+        sprite: {fileID: -2015865140205497318, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -37
+        y: -62
+      - res: AEB663
+        sprite: {fileID: -1924346092685312606, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -23
+        y: -59
+      - res: 6CCF085F
+        sprite: {fileID: -4566124974743982979, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -32
+        y: -41
+      - res: DFF8FD3F
+        sprite: {fileID: 297573236399770504, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -38
+        y: -26
+      Loop: 1
+    - AnimName: body003_0_7h
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: 4BFC19C6
+        sprite: {fileID: -5179397610580488846, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -19
+        y: -42
+      - res: 54F1E21B
+        sprite: {fileID: -3463874676762865076, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -20
+        y: -50
+      - res: 1D983695
+        sprite: {fileID: 8375860294086421513, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -24
+        y: -60
+      Loop: 1
+    - AnimName: body003_0_7r
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: E498603
+        sprite: {fileID: 586752982249250509, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -24
+        y: -60
+      - res: 572BBB73
+        sprite: {fileID: -8866486976705354339, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -25
+        y: -61
+      - res: 48C87819
+        sprite: {fileID: -4864737720856016520, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -18
+        y: -63
+      - res: BA70BF9F
+        sprite: {fileID: -6670595433483158544, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -22
+        y: -60
+      - res: B44A66DC
+        sprite: {fileID: -7281670232277700451, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -20
+        y: -61
+      - res: EFF421C2
+        sprite: {fileID: 4617371016641463902, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -25
+        y: -63
+      Loop: 1
+    - AnimName: body003_0_7s
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: A36AB9EB
+        sprite: {fileID: -2270845679764344079, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -16
+        y: -61
+      - res: B7C2F0EC
+        sprite: {fileID: 7376791217905771633, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -16
+        y: -61
+      - res: D2B36CBB
+        sprite: {fileID: 2438833952692408251, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -16
+        y: -61
+      - res: D45AFFAB
+        sprite: {fileID: -8074167959832727767, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -16
+        y: -61
+      Loop: 1
+    - AnimName: body003_0_7s1
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: 6A1E3AB9
+        sprite: {fileID: 4102664114285578468, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -30
+        y: -56
+      Loop: 1
+    - AnimName: body003_0_7w
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: 75A580F1
+        sprite: {fileID: 1709036976392379010, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -19
+        y: -61
+      - res: 6E9402FC
+        sprite: {fileID: -6859085475822114689, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -15
+        y: -60
+      - res: 3DABB989
+        sprite: {fileID: -6523723010844251678, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -15
+        y: -61
+      - res: 2A29F2DD
+        sprite: {fileID: 7052236142992477752, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -22
+        y: -61
+      - res: B7579302
+        sprite: {fileID: -659474898325651092, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -14
+        y: -60
+      - res: 58DB7F42
+        sprite: {fileID: -3517465228860480810, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -16
+        y: -61
+      Loop: 1
+    - AnimName: body003_0_0a
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: B3D17128
+        sprite: {fileID: -7383089630438850985, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -22
+        y: -54
+      - res: B5AE4868
+        sprite: {fileID: 6488868112860489593, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -21
+        y: -50
+      - res: EB1F5A6C
+        sprite: {fileID: 8907389682052352199, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -27
+        y: -63
+      - res: 9F0E49B9
+        sprite: {fileID: 159054781003428785, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -28
+        y: -77
+      - res: 1ED2EF53
+        sprite: {fileID: 4564317728898021349, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -24
+        y: -63
+      - res: A1FF20F2
+        sprite: {fileID: 8827296962351182348, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -22
+        y: -63
+      Loop: 1
+    - AnimName: body003_0_0c
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: 6387F7A9
+        sprite: {fileID: 2626123544289447262, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -29
+        y: -59
+      - res: 7645AFB1
+        sprite: {fileID: 1337527853656484097, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -30
+        y: -60
+      - res: 7927B77
+        sprite: {fileID: 5697149648701834171, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -32
+        y: -67
+      - res: 191AF2C0
+        sprite: {fileID: -5962475825842760141, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -33
+        y: -67
+      - res: 777BADF1
+        sprite: {fileID: -7488257504279865892, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -35
+        y: -71
+      - res: 47EA6698
+        sprite: {fileID: -3508670213201011604, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -31
+        y: -62
+      Loop: 1
+    - AnimName: body003_0_0d
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: 6EAFC5E8
+        sprite: {fileID: 5645098663391236806, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -27
+        y: -64
+      - res: 6147C688
+        sprite: {fileID: 6956586267439692395, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -21
+        y: -60
+      - res: 9E105FFF
+        sprite: {fileID: 6738537304815877740, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -27
+        y: -38
+      - res: 9DCE2FE5
+        sprite: {fileID: 6513127528188018593, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -21
+        y: -31
+      Loop: 1
+    - AnimName: body003_0_0h
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: A577169D
+        sprite: {fileID: 8067426450679548452, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -19
+        y: -45
+      - res: BBD3E978
+        sprite: {fileID: 3415889299130485952, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -24
+        y: -55
+      - res: 8DCB2506
+        sprite: {fileID: 4722243042027157622, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -28
+        y: -63
+      Loop: 1
+    - AnimName: body003_0_0r
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: 1F2E61A8
+        sprite: {fileID: -6107793645291784513, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -39
+        y: -62
+      - res: 9D61B5E8
+        sprite: {fileID: -5515499460608126336, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -41
+        y: -63
+      - res: 5F843B6E
+        sprite: {fileID: 8427023530429506078, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -28
+        y: -65
+      - res: A09D4CBF
+        sprite: {fileID: -9050393951042125781, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -22
+        y: -62
+      - res: C410ABC
+        sprite: {fileID: 7439650709664951071, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -20
+        y: -63
+      - res: 2F99D281
+        sprite: {fileID: 5408417313039186099, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -27
+        y: -65
+      Loop: 1
+    - AnimName: body003_0_0s
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: CD9C29D1
+        sprite: {fileID: -9142325313640133065, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -23
+        y: -62
+      - res: 340DA5E7
+        sprite: {fileID: -2143911112500456121, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -25
+        y: -62
+      - res: 7D4DBF6F
+        sprite: {fileID: 6592686303869694264, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -25
+        y: -62
+      - res: E34DC93F
+        sprite: {fileID: 4370719600930599169, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -24
+        y: -62
+      Loop: 1
+    - AnimName: body003_0_0s1
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: 255BE219
+        sprite: {fileID: -7483257792296112043, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -28
+        y: -57
+      Loop: 1
+    - AnimName: body003_0_0w
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: 47347018
+        sprite: {fileID: 4519409960897527048, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -20
+        y: -62
+      - res: 521877BD
+        sprite: {fileID: -5739517000997308732, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -22
+        y: -62
+      - res: 96693965
+        sprite: {fileID: 1573681351579388552, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -20
+        y: -63
+      - res: 63DA76B9
+        sprite: {fileID: 4077535745941346242, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -19
+        y: -62
+      - res: 292A6F8F
+        sprite: {fileID: -5934080243839346360, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -18
+        y: -62
+      - res: B4D7E5CE
+        sprite: {fileID: 3234396028919727100, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -18
+        y: -62
+      Loop: 1
+    - AnimName: body003_0_1a
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: 4A25936F
+        sprite: {fileID: -6548599938170329588, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -26
+        y: -55
+      - res: 9956A675
+        sprite: {fileID: 8749184646046792593, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -35
+        y: -48
+      - res: AB0D582C
+        sprite: {fileID: 2118994090941155385, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -30
+        y: -61
+      - res: 2CBB4390
+        sprite: {fileID: -5654301241810593772, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -29
+        y: -60
+      - res: EE98EEED
+        sprite: {fileID: 6799770033649785054, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -22
+        y: -56
+      - res: DD229E2C
+        sprite: {fileID: -6242648956082488016, guid: 0a5a3c77b3a7b154d8e7097a055ea620,
+          type: 3}
+        x: -28
+        y: -57
+      Loop: 1

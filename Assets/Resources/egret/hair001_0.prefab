@@ -1,0 +1,1808 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3927867741831206742
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3819782916701238918}
+  - component: {fileID: 4576403123004292325}
+  m_Layer: 0
+  m_Name: hair001_0
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3819782916701238918
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3927867741831206742}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4576403123004292325
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3927867741831206742}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 904cc5635f583a741b8cb2735260ec39, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AnimRes:
+    Infos:
+    - AnimName: hair001_0_5s1
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: 2563B0D3
+        sprite: {fileID: 5846898865620187442, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -6
+        y: -58
+      Loop: 1
+    - AnimName: hair001_0_5w
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: 6B89960E
+        sprite: {fileID: 4445452635580467264, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -6
+        y: -62
+      - res: 3FEFBBCA
+        sprite: {fileID: -6031950460546927172, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -5
+        y: -63
+      - res: 24E06537
+        sprite: {fileID: -4063314681908409240, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -6
+        y: -63
+      - res: F68EE216
+        sprite: {fileID: -1825210850084437074, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -7
+        y: -62
+      - res: 6BEA2BE
+        sprite: {fileID: 5080182892149350842, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -6
+        y: -63
+      - res: 8F83F725
+        sprite: {fileID: 3041167347191605052, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -6
+        y: -63
+      Loop: 1
+    - AnimName: hair001_0_6a
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: 93EE9202
+        sprite: {fileID: 4258250784807175314, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -2
+        y: -60
+      - res: 44BE37D6
+        sprite: {fileID: -1376694770840436865, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: 13
+        y: -49
+      - res: F0F26599
+        sprite: {fileID: -2971078766829710201, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -16
+        y: -58
+      - res: B5782B23
+        sprite: {fileID: -4990086031409955701, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -28
+        y: -53
+      - res: 5BAE487A
+        sprite: {fileID: 6698968734709242297, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -33
+        y: -48
+      - res: BC4F373
+        sprite: {fileID: -7652756143305596417, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -21
+        y: -58
+      Loop: 1
+    - AnimName: hair001_0_6c
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: 9CF0F593
+        sprite: {fileID: 8659185727145507051, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -4
+        y: -62
+      - res: 65841E42
+        sprite: {fileID: 8262600383688029196, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -4
+        y: -61
+      - res: D90EDB69
+        sprite: {fileID: 1611161295139498295, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -3
+        y: -61
+      - res: 1EC30C3F
+        sprite: {fileID: -903134442883785138, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -2
+        y: -59
+      - res: 38164ECA
+        sprite: {fileID: -5716946078110865864, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -3
+        y: -60
+      - res: 56AF382F
+        sprite: {fileID: 5864769109019207736, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -9
+        y: -62
+      Loop: 1
+    - AnimName: hair001_0_6d
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: C7346F9A
+        sprite: {fileID: -2487539279471135458, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -18
+        y: -58
+      - res: D76E127
+        sprite: {fileID: 4122667037878103264, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -4
+        y: -57
+      - res: 8606242F
+        sprite: {fileID: -8309097202730389754, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: 32
+        y: -16
+      - res: 87735F30
+        sprite: {fileID: 4292484883278925087, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: 43
+        y: -8
+      Loop: 1
+    - AnimName: hair001_0_6h
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: 324C8B44
+        sprite: {fileID: 2754302500158524056, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: 17
+        y: -50
+      - res: BAAAB67
+        sprite: {fileID: 772396137651032197, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: 8
+        y: -57
+      - res: DE3E3B25
+        sprite: {fileID: -7034570394284047855, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -6
+        y: -61
+      Loop: 1
+    - AnimName: hair001_0_6r
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: DEA490B7
+        sprite: {fileID: -6697690275631159097, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -9
+        y: -60
+      - res: 76C63237
+        sprite: {fileID: -5014288245549614745, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -9
+        y: -61
+      - res: B5C3DABC
+        sprite: {fileID: -3600100542344075749, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -8
+        y: -63
+      - res: B6D68E5D
+        sprite: {fileID: -1232437197647604739, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -8
+        y: -60
+      - res: 4C171550
+        sprite: {fileID: -7546002453889805541, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -8
+        y: -61
+      - res: 4EF82F47
+        sprite: {fileID: 7752358619158659755, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -9
+        y: -63
+      Loop: 1
+    - AnimName: hair001_0_6s
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: 36E04A21
+        sprite: {fileID: 775727842779746675, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -6
+        y: -62
+      - res: 2D4267AB
+        sprite: {fileID: -4018731526722412700, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -6
+        y: -62
+      - res: C85936F
+        sprite: {fileID: 1587079911703614360, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -6
+        y: -62
+      - res: F30EFEB0
+        sprite: {fileID: 8987675982536722820, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -6
+        y: -62
+      Loop: 1
+    - AnimName: hair001_0_6s1
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: 9D7BFECF
+        sprite: {fileID: 4233158886205051297, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -6
+        y: -57
+      Loop: 1
+    - AnimName: hair001_0_6w
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: 8EDC84F4
+        sprite: {fileID: -4043961215154946374, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -7
+        y: -62
+      - res: E365A0F6
+        sprite: {fileID: -7666095624477139291, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -6
+        y: -62
+      - res: 6EDC4B7F
+        sprite: {fileID: -1944634265677213248, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -7
+        y: -62
+      - res: 485034E8
+        sprite: {fileID: 5485530566981205754, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -7
+        y: -62
+      - res: 52EC787D
+        sprite: {fileID: -1628978043688599056, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -6
+        y: -62
+      - res: FCEF088C
+        sprite: {fileID: 6038154861759914776, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -6
+        y: -62
+      Loop: 1
+    - AnimName: hair001_0_7a
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: AF2050F8
+        sprite: {fileID: 6302865690106426290, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: 1
+        y: -56
+      - res: C36D917C
+        sprite: {fileID: -2416952026394565098, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: 4
+        y: -41
+      - res: BC102917
+        sprite: {fileID: -4654612282401185641, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -9
+        y: -61
+      - res: FB5C7686
+        sprite: {fileID: -7445112767461503803, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -18
+        y: -62
+      - res: 1E7E730B
+        sprite: {fileID: 4003401397319824331, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -22
+        y: -59
+      - res: BE1C41F4
+        sprite: {fileID: -2093589730372543980, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -12
+        y: -63
+      Loop: 1
+    - AnimName: hair001_0_7c
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: A51BC308
+        sprite: {fileID: -4919265702034008834, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -3
+        y: -60
+      - res: F7734347
+        sprite: {fileID: 7016607163191977653, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -3
+        y: -59
+      - res: 46734DDC
+        sprite: {fileID: -7860402925683702582, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -1
+        y: -58
+      - res: 4C246372
+        sprite: {fileID: 8656534412351157383, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -2
+        y: -55
+      - res: B86F811E
+        sprite: {fileID: 1109375354114949183, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -3
+        y: -57
+      - res: F45290F2
+        sprite: {fileID: -2752678530248932416, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -6
+        y: -62
+      Loop: 1
+    - AnimName: hair001_0_7d
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: F4E95974
+        sprite: {fileID: -4292867488166224059, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -13
+        y: -62
+      - res: 55688C1E
+        sprite: {fileID: 4423393956425440206, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -2
+        y: -55
+      - res: 5E482C17
+        sprite: {fileID: -6772464403713162905, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: 22
+        y: 2
+      - res: 9D6BAAD3
+        sprite: {fileID: 4377001676057824955, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: 30
+        y: 15
+      Loop: 1
+    - AnimName: hair001_0_7h
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: A85B0530
+        sprite: {fileID: 5882427633735160080, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: 8
+        y: -39
+      - res: 5FEF9A9
+        sprite: {fileID: -341831148576256283, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: 3
+        y: -49
+      - res: D4D679A3
+        sprite: {fileID: 456209365428912972, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -5
+        y: -60
+      Loop: 1
+    - AnimName: hair001_0_7r
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: 3DFECB86
+        sprite: {fileID: -9015300745770456486, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -8
+        y: -61
+      - res: EACA3F92
+        sprite: {fileID: -5695835094027499389, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -8
+        y: -62
+      - res: 2DFE808D
+        sprite: {fileID: 7152213348526797223, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -8
+        y: -63
+      - res: 1EC7B580
+        sprite: {fileID: 2210928852584465346, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -8
+        y: -61
+      - res: 15897BCF
+        sprite: {fileID: -25378824526234820, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -8
+        y: -61
+      - res: 24EF8AAA
+        sprite: {fileID: 3205289827444404894, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -8
+        y: -63
+      Loop: 1
+    - AnimName: hair001_0_7s
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: 9E98AD71
+        sprite: {fileID: -2674170588044917651, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -6
+        y: -61
+      - res: 6B39D626
+        sprite: {fileID: 6025033033447510695, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -6
+        y: -61
+      - res: D8F2B31B
+        sprite: {fileID: -272123690794764538, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -6
+        y: -61
+      - res: D1142E99
+        sprite: {fileID: -8874002011178499971, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -6
+        y: -61
+      Loop: 1
+    - AnimName: hair001_0_7s1
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: 2228DE37
+        sprite: {fileID: 3866348423104439796, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -5
+        y: -56
+      Loop: 1
+    - AnimName: hair001_0_7w
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: E98680C0
+        sprite: {fileID: -5339380158977594856, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -6
+        y: -61
+      - res: 8F149451
+        sprite: {fileID: 935990124709557302, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -6
+        y: -61
+      - res: F4D7301B
+        sprite: {fileID: 1771668380109519100, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -6
+        y: -62
+      - res: 5590E677
+        sprite: {fileID: -2955654767968460605, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -6
+        y: -61
+      - res: F6E78E1A
+        sprite: {fileID: 3186418166560774374, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -6
+        y: -61
+      - res: 1FEE2627
+        sprite: {fileID: -818234731717829046, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -6
+        y: -61
+      Loop: 1
+    - AnimName: hair001_0_0a
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: FC190870
+        sprite: {fileID: -8696274196802878082, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: 0
+        y: -55
+      - res: AF27C021
+        sprite: {fileID: 9066768248014275770, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -9
+        y: -40
+      - res: 109553EE
+        sprite: {fileID: 6057332481551605661, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: 0
+        y: -62
+      - res: D04D48B9
+        sprite: {fileID: -215826011820148106, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: 0
+        y: -65
+      - res: 64EDF437
+        sprite: {fileID: 4333650932934018799, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: 0
+        y: -64
+      - res: 4E871F6C
+        sprite: {fileID: -2169610820601018936, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: 2
+        y: -64
+      Loop: 1
+    - AnimName: hair001_0_0c
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: 7AB75C9A
+        sprite: {fileID: -4535557238152462667, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -2
+        y: -60
+      - res: E0B8D435
+        sprite: {fileID: 3900776737183252123, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -3
+        y: -59
+      - res: 9093E2E8
+        sprite: {fileID: -1607151020028014294, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -2
+        y: -57
+      - res: CCA3722D
+        sprite: {fileID: 6780461961027174975, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -4
+        y: -56
+      - res: DEB760B6
+        sprite: {fileID: 8183793779632762657, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -4
+        y: -58
+      - res: EBD97F55
+        sprite: {fileID: -570427584881755840, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -2
+        y: -63
+      Loop: 1
+    - AnimName: hair001_0_0d
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: 7F70113E
+        sprite: {fileID: 2948989118307002669, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -2
+        y: -65
+      - res: B5D9BBB8
+        sprite: {fileID: -3377998981032742699, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -2
+        y: -54
+      - res: E314F785
+        sprite: {fileID: 7282650135830646632, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -1
+        y: 10
+      - res: 1B93787C
+        sprite: {fileID: 6788847171733182038, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -1
+        y: 23
+      Loop: 1
+    - AnimName: hair001_0_0h
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: 7107052F
+        sprite: {fileID: 5068445307282265677, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -7
+        y: -37
+      - res: 251F623A
+        sprite: {fileID: 8606918741259397116, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -5
+        y: -48
+      - res: D017A0DC
+        sprite: {fileID: -1851194650641169730, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -4
+        y: -61
+      Loop: 1
+    - AnimName: hair001_0_0r
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: 9C579094
+        sprite: {fileID: 796010303928156288, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -6
+        y: -63
+      - res: 1727FF2C
+        sprite: {fileID: 3694383785927584332, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -5
+        y: -64
+      - res: 3777CAF9
+        sprite: {fileID: -4581512998555520079, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -5
+        y: -65
+      - res: 36408486
+        sprite: {fileID: -1946597648244604360, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -5
+        y: -63
+      - res: 13571746
+        sprite: {fileID: 7026774465800756743, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -5
+        y: -64
+      - res: D8B5529E
+        sprite: {fileID: 3761882141634170874, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -5
+        y: -65
+      Loop: 1
+    - AnimName: hair001_0_0s
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: 35F81073
+        sprite: {fileID: -6988226149743740700, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -5
+        y: -63
+      - res: 6EC639D8
+        sprite: {fileID: 6831750524084929260, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -5
+        y: -63
+      - res: D970048A
+        sprite: {fileID: 6495753293385224162, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -5
+        y: -63
+      - res: E8A5FF98
+        sprite: {fileID: 1563652327296377981, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -5
+        y: -63
+      Loop: 1
+    - AnimName: hair001_0_0s1
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: 3256E940
+        sprite: {fileID: 5594849744433838778, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -4
+        y: -57
+      Loop: 1
+    - AnimName: hair001_0_0w
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: A0D6CA7A
+        sprite: {fileID: -5362694432578156562, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -5
+        y: -63
+      - res: 490DEA85
+        sprite: {fileID: -5192962194392374259, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -5
+        y: -62
+      - res: 2F66D264
+        sprite: {fileID: 488818230954716431, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -5
+        y: -63
+      - res: 39E075AB
+        sprite: {fileID: 5094185285624986054, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -5
+        y: -63
+      - res: 2A51871D
+        sprite: {fileID: 1087260124687827334, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -5
+        y: -62
+      - res: 33C483C
+        sprite: {fileID: -5450419159363880386, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -5
+        y: -63
+      Loop: 1
+    - AnimName: hair001_0_1a
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: F388A742
+        sprite: {fileID: -734081292612221429, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -5
+        y: -53
+      - res: 97675C0A
+        sprite: {fileID: 5160869952440559833, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -21
+        y: -46
+      - res: 5745A7A1
+        sprite: {fileID: 1514935016358077309, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: 6
+        y: -58
+      - res: 64AFC4D
+        sprite: {fileID: 5382282524266859421, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: 15
+        y: -58
+      - res: C6D35889
+        sprite: {fileID: -1678334165813220731, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: 18
+        y: -57
+      - res: 6C6F0580
+        sprite: {fileID: -1412716796398066538, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: 11
+        y: -58
+      Loop: 1
+    - AnimName: hair001_0_1c
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: E24AC198
+        sprite: {fileID: -2050940174894493420, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -4
+        y: -59
+      - res: B0AA45E
+        sprite: {fileID: -5238860969656091610, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -5
+        y: -59
+      - res: 354EFEE8
+        sprite: {fileID: -3080853586307200131, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -6
+        y: -57
+      - res: BE110266
+        sprite: {fileID: -2217233481701661031, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -9
+        y: -56
+      - res: C3DB27A9
+        sprite: {fileID: 7408086243749113315, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -7
+        y: -58
+      - res: 19BBE486
+        sprite: {fileID: -765801209304437466, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -1
+        y: -61
+      Loop: 1
+    - AnimName: hair001_0_1d
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: AC540C7E
+        sprite: {fileID: -4556786039302845033, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: 5
+        y: -61
+      - res: 7246B9F6
+        sprite: {fileID: -7154104183901306220, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -5
+        y: -54
+      - res: 28B9A2C4
+        sprite: {fileID: -4719385459684324559, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -27
+        y: 4
+      - res: B453221D
+        sprite: {fileID: 5592650039927334772, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -36
+        y: 15
+      Loop: 1
+    - AnimName: hair001_0_1h
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: 6E5ACFBD
+        sprite: {fileID: -7705215414350294656, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -24
+        y: -44
+      - res: 367A26A8
+        sprite: {fileID: -6969027987700061111, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -15
+        y: -51
+      - res: 58E07B7D
+        sprite: {fileID: 1242221081609447660, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -5
+        y: -61
+      Loop: 1
+    - AnimName: hair001_0_1r
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: 65D1C8B1
+        sprite: {fileID: -9145822415768444090, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -4
+        y: -63
+      - res: 704E2449
+        sprite: {fileID: -7294941185736301277, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -3
+        y: -64
+      - res: 4E5CDC89
+        sprite: {fileID: 3986828442118201145, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -3
+        y: -65
+      - res: BD57C8BA
+        sprite: {fileID: -6047585413818093696, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -3
+        y: -63
+      - res: 5513130
+        sprite: {fileID: 5434664039369647632, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -3
+        y: -64
+      - res: 9E66938C
+        sprite: {fileID: 670216483758004308, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -4
+        y: -65
+      Loop: 1
+    - AnimName: hair001_0_1s
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: 6483F560
+        sprite: {fileID: -8385958890509875168, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -5
+        y: -63
+      - res: D18B060A
+        sprite: {fileID: 2149036981431169005, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -5
+        y: -63
+      - res: EB64F372
+        sprite: {fileID: 8641079876354465491, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -5
+        y: -63
+      - res: A8E34443
+        sprite: {fileID: -4173216788724611943, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -5
+        y: -63
+      Loop: 1
+    - AnimName: hair001_0_1s1
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: 2B324A3A
+        sprite: {fileID: 4998584802316673059, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -4
+        y: -57
+      Loop: 1
+    - AnimName: hair001_0_1w
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: 6A0287A6
+        sprite: {fileID: 6290898708811956466, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -4
+        y: -63
+      - res: C2CB5A3A
+        sprite: {fileID: -18093121213555414, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -5
+        y: -63
+      - res: 458DC77D
+        sprite: {fileID: 4060142444113714709, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -4
+        y: -63
+      - res: CFDCEF6E
+        sprite: {fileID: 5012375532831664261, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -4
+        y: -63
+      - res: 8794E400
+        sprite: {fileID: -1397747687040333192, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -5
+        y: -63
+      - res: D6F3EFFE
+        sprite: {fileID: -3104314485874552692, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -5
+        y: -63
+      Loop: 1
+    - AnimName: hair001_0_2a
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: C5CFECA1
+        sprite: {fileID: -7608813702972861850, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -10
+        y: -54
+      - res: 487E738
+        sprite: {fileID: -2521803468908760061, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -23
+        y: -55
+      - res: 8F981E30
+        sprite: {fileID: 4724573212150349522, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: 5
+        y: -52
+      - res: 15BDFE11
+        sprite: {fileID: -4109107298862173263, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: 16
+        y: -47
+      - res: 8ECF1D9
+        sprite: {fileID: 8471558260916559899, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: 21
+        y: -43
+      - res: E1364E2A
+        sprite: {fileID: -5325199131297282894, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: 10
+        y: -49
+      Loop: 1
+    - AnimName: hair001_0_2c
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: D6C1DE1E
+        sprite: {fileID: 8053095398246668489, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -7
+        y: -59
+      - res: C9DE15CD
+        sprite: {fileID: -3034799931601781668, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -7
+        y: -59
+      - res: E388E5C1
+        sprite: {fileID: -3630975183491540752, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -10
+        y: -58
+      - res: 34DF1667
+        sprite: {fileID: -7351799872303644913, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -12
+        y: -58
+      - res: 30A75B30
+        sprite: {fileID: -8326266846452604209, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -9
+        y: -59
+      - res: 5D17A1CF
+        sprite: {fileID: -4429772673241537312, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -3
+        y: -59
+      Loop: 1
+    - AnimName: hair001_0_2d
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: 296C29D0
+        sprite: {fileID: -4207252797633170881, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: 6
+        y: -56
+      - res: 2773BAD9
+        sprite: {fileID: 5885744855255984242, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -9
+        y: -54
+      - res: 813842FD
+        sprite: {fileID: -7708368214491754104, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -42
+        y: -10
+      - res: 56E0E016
+        sprite: {fileID: -7091671374644617834, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -53
+        y: -5
+      Loop: 1
+    - AnimName: hair001_0_2h
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: 320BEF9D
+        sprite: {fileID: -8477908142896034361, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -30
+        y: -55
+      - res: 3ADC85E0
+        sprite: {fileID: -329335416147458268, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -20
+        y: -57
+      - res: E2EB35CD
+        sprite: {fileID: -8388177567230025386, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -6
+        y: -60
+      Loop: 1
+    - AnimName: hair001_0_2r
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: A42BD68B
+        sprite: {fileID: 5287900490673754771, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -3
+        y: -62
+      - res: 349E365C
+        sprite: {fileID: -7301143782120982037, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -3
+        y: -62
+      - res: 8712B65F
+        sprite: {fileID: 89249668778030455, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -3
+        y: -64
+      - res: 50593C3C
+        sprite: {fileID: -1019173813760833054, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -3
+        y: -62
+      - res: 252A3950
+        sprite: {fileID: 5442977671608168134, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -3
+        y: -62
+      - res: 837A8EFD
+        sprite: {fileID: -3446127886367191445, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -3
+        y: -64
+      Loop: 1
+    - AnimName: hair001_0_2s
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: FB1AF084
+        sprite: {fileID: 4977024032379206938, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -5
+        y: -63
+      - res: 758F64EE
+        sprite: {fileID: -6490425039297929354, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -5
+        y: -63
+      - res: 2C83E52E
+        sprite: {fileID: -3675402831823752073, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -5
+        y: -63
+      - res: F060D6AA
+        sprite: {fileID: -6585601179742869006, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -5
+        y: -63
+      Loop: 1
+    - AnimName: hair001_0_2s1
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: 37F2F02F
+        sprite: {fileID: -4659634960679222573, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -5
+        y: -57
+      Loop: 1
+    - AnimName: hair001_0_2w
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: B1EC5432
+        sprite: {fileID: -1829365960731211991, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -5
+        y: -62
+      - res: 46BFE1D6
+        sprite: {fileID: -9057968748375287636, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -6
+        y: -62
+      - res: 231EDA79
+        sprite: {fileID: -6526128004248064801, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -5
+        y: -63
+      - res: 3C31819A
+        sprite: {fileID: -5789849587364747105, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -5
+        y: -62
+      - res: 5A6903B5
+        sprite: {fileID: 3739956042260825359, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -6
+        y: -62
+      - res: 4C47F250
+        sprite: {fileID: 6628474363751464539, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -5
+        y: -63
+      Loop: 1
+    - AnimName: hair001_0_3a
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: D7F32CD
+        sprite: {fileID: -5239801244441737225, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -12
+        y: -57
+      - res: F6BD18CD
+        sprite: {fileID: 4691162695817744755, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -14
+        y: -64
+      - res: 5E8C0FC6
+        sprite: {fileID: 677029272471165492, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: 0
+        y: -48
+      - res: 5ECBE2C5
+        sprite: {fileID: 3820457657317538476, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: 8
+        y: -37
+      - res: 202BDDB5
+        sprite: {fileID: -7799061196623915126, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: 12
+        y: -31
+      - res: ACEDB21D
+        sprite: {fileID: -1715135462228757930, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: 2
+        y: -43
+      Loop: 1
+    - AnimName: hair001_0_3c
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: 465D1077
+        sprite: {fileID: 687437048478498773, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -8
+        y: -60
+      - res: ABA4627E
+        sprite: {fileID: 4414328549027604679, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -7
+        y: -60
+      - res: 3EFECE74
+        sprite: {fileID: 6747384025732204107, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -9
+        y: -61
+      - res: 60E2F513
+        sprite: {fileID: -3336502234207871549, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -8
+        y: -61
+      - res: CAA837AF
+        sprite: {fileID: 2738821478243676643, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -7
+        y: -61
+      - res: 9DBCFD2E
+        sprite: {fileID: 2409159198631396929, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -4
+        y: -58
+      Loop: 1
+    - AnimName: hair001_0_3d
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: 870C7A37
+        sprite: {fileID: -6455762659687972766, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: 2
+        y: -51
+      - res: 81632B5F
+        sprite: {fileID: 2211945477550625239, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -8
+        y: -56
+      - res: AF6974
+        sprite: {fileID: -8354504256910044542, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -33
+        y: -28
+      - res: E8E4ABB8
+        sprite: {fileID: -2313428541080334235, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -40
+        y: -28
+      Loop: 1
+    - AnimName: hair001_0_3h
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: B9F956FD
+        sprite: {fileID: 97361511216121783, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -20
+        y: -65
+      - res: 92D5EF02
+        sprite: {fileID: -8715400479749450928, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -15
+        y: -64
+      - res: 5F00A50C
+        sprite: {fileID: -2414487403521763676, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -5
+        y: -61
+      Loop: 1
+    - AnimName: hair001_0_3r
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: 9F01A74B
+        sprite: {fileID: -1277207502398536796, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -2
+        y: -60
+      - res: 9CACABAE
+        sprite: {fileID: 5522462808470079729, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -3
+        y: -61
+      - res: 75832CF1
+        sprite: {fileID: -4222670158665224787, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -2
+        y: -63
+      - res: 26424ECB
+        sprite: {fileID: 4725263951072537686, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -2
+        y: -60
+      - res: D6ED860C
+        sprite: {fileID: 2957352034840320574, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -2
+        y: -61
+      - res: BF856F33
+        sprite: {fileID: -2565336988689734971, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -2
+        y: -63
+      Loop: 1
+    - AnimName: hair001_0_3s
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: 1DF07D42
+        sprite: {fileID: 3309601844877230824, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -4
+        y: -63
+      - res: A346CBC9
+        sprite: {fileID: 2482523831661638697, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -4
+        y: -63
+      - res: 3FA7AD3F
+        sprite: {fileID: 6178754358774729035, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -4
+        y: -63
+      - res: D1BBAEAE
+        sprite: {fileID: -3923918227891163881, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -4
+        y: -63
+      Loop: 1
+    - AnimName: hair001_0_3s1
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: 80E319A2
+        sprite: {fileID: -8195268916207792303, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -5
+        y: -57
+      Loop: 1
+    - AnimName: hair001_0_3w
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: DC27BE7B
+        sprite: {fileID: -5654241234652327050, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -4
+        y: -62
+      - res: BF096430
+        sprite: {fileID: -8956956961061414972, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -4
+        y: -63
+      - res: AB8F6BBB
+        sprite: {fileID: 5397317749959407045, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -4
+        y: -62
+      - res: A3852EB9
+        sprite: {fileID: 8703322893738469644, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -5
+        y: -62
+      - res: 4B0FF9D6
+        sprite: {fileID: 5989226426957374673, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -4
+        y: -62
+      - res: 2918A025
+        sprite: {fileID: 901628040568303705, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -4
+        y: -63
+      Loop: 1
+    - AnimName: hair001_0_4a
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: 63601392
+        sprite: {fileID: 8266627820941198349, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -9
+        y: -61
+      - res: 3E2E4B08
+        sprite: {fileID: 6559038831283901455, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -1
+        y: -65
+      - res: B4896F8A
+        sprite: {fileID: -814103316923614052, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -10
+        y: -49
+      - res: E019CD33
+        sprite: {fileID: 9094886880332521442, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -10
+        y: -36
+      - res: EDD141B1
+        sprite: {fileID: -3839338110376553920, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -9
+        y: -28
+      - res: D4C70037
+        sprite: {fileID: 3839355488376233817, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -11
+        y: -43
+      Loop: 1
+    - AnimName: hair001_0_4c
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: 5B46F1E0
+        sprite: {fileID: 9068230715359750996, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -7
+        y: -62
+      - res: DF6BBACE
+        sprite: {fileID: -3240772905681651080, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -6
+        y: -62
+      - res: F00C92CB
+        sprite: {fileID: 6708413627997730689, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -7
+        y: -63
+      - res: E77E5606
+        sprite: {fileID: -2856599063319007107, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -5
+        y: -63
+      - res: EB20C7F6
+        sprite: {fileID: -2217279685789462232, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -5
+        y: -63
+      - res: 972FE792
+        sprite: {fileID: 4778033311319702243, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -7
+        y: -60
+      Loop: 1
+    - AnimName: hair001_0_4d
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: 11078914
+        sprite: {fileID: 4120666611386522276, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -7
+        y: -50
+      - res: BF60E029
+        sprite: {fileID: -1938320884925142447, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -8
+        y: -57
+      - res: EAE3F7F9
+        sprite: {fileID: -4789072161094175589, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -9
+        y: -37
+      - res: 402E28E1
+        sprite: {fileID: 8207287017758351924, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -8
+        y: -39
+      Loop: 1
+    - AnimName: hair001_0_4h
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: 11C08D10
+        sprite: {fileID: 1382868550289376622, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -2
+        y: -68
+      - res: 7B21B1B0
+        sprite: {fileID: -3546826766143505661, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -5
+        y: -67
+      - res: 50BEAE7D
+        sprite: {fileID: 5261413503769829166, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -5
+        y: -62
+      Loop: 1
+    - AnimName: hair001_0_4r
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: 6DDD83F9
+        sprite: {fileID: -2122607975690289496, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -4
+        y: -60
+      - res: AE022ECE
+        sprite: {fileID: -257294480118462526, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -4
+        y: -61
+      - res: 64EA3500
+        sprite: {fileID: 7155743316008796067, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -4
+        y: -62
+      - res: 50B962DA
+        sprite: {fileID: 2533956045474440224, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -4
+        y: -60
+      - res: E6A2F609
+        sprite: {fileID: 7895547940629992196, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -4
+        y: -61
+      - res: 3AA854F6
+        sprite: {fileID: 8704817779357056989, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -4
+        y: -62
+      Loop: 1
+    - AnimName: hair001_0_4s
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: 7EB79733
+        sprite: {fileID: 8484367008256025925, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -4
+        y: -63
+      - res: A2FA4AB5
+        sprite: {fileID: -6157855536582801438, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -5
+        y: -63
+      - res: 22E368E9
+        sprite: {fileID: 6031034604465147146, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -5
+        y: -63
+      - res: 78FAAE09
+        sprite: {fileID: 9003235582594093249, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -4
+        y: -63
+      Loop: 1
+    - AnimName: hair001_0_4s1
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: 19491B60
+        sprite: {fileID: 5334360520953376573, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -5
+        y: -58
+      Loop: 1
+    - AnimName: hair001_0_4w
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: A4B7C110
+        sprite: {fileID: -5025611325645201484, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -5
+        y: -62
+      - res: BEDB9A14
+        sprite: {fileID: -5450118780475919040, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -4
+        y: -63
+      - res: C4D096D0
+        sprite: {fileID: -6903459174508638076, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -4
+        y: -63
+      - res: FE18AF40
+        sprite: {fileID: -5109128051881652642, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -4
+        y: -62
+      - res: 5F326DFB
+        sprite: {fileID: -1853886196691754948, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -5
+        y: -63
+      - res: 4D24C341
+        sprite: {fileID: 5431632158711198212, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -4
+        y: -63
+      Loop: 1
+    - AnimName: hair001_0_5a
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: 3190330B
+        sprite: {fileID: 3548579336036247164, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -6
+        y: -62
+      - res: A48DC977
+        sprite: {fileID: -2080339644644600087, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: 10
+        y: -59
+      - res: B1F92564
+        sprite: {fileID: 5721934541513926245, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -16
+        y: -54
+      - res: 4FA7D26F
+        sprite: {fileID: 7190255914335199030, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -25
+        y: -43
+      - res: 2938A64C
+        sprite: {fileID: -1628380996590370124, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -28
+        y: -36
+      - res: EAC5E85C
+        sprite: {fileID: -1821872362808294184, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -22
+        y: -50
+      Loop: 1
+    - AnimName: hair001_0_5c
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: 1191E55F
+        sprite: {fileID: 9046779746215532954, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -7
+        y: -63
+      - res: A520ABB6
+        sprite: {fileID: -6054334922630680329, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -6
+        y: -62
+      - res: 3F40D5D4
+        sprite: {fileID: 5265735304896140270, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -5
+        y: -63
+      - res: D259E930
+        sprite: {fileID: 2741091705159978902, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -2
+        y: -62
+      - res: 6C2C275C
+        sprite: {fileID: -7208679300584015100, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -4
+        y: -62
+      - res: F920D13F
+        sprite: {fileID: 5590564386755603152, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -9
+        y: -61
+      Loop: 1
+    - AnimName: hair001_0_5d
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: 9A809516
+        sprite: {fileID: 4446117530620166079, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -15
+        y: -53
+      - res: B48A88D5
+        sprite: {fileID: -4434818067775837378, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -6
+        y: -58
+      - res: CF472073
+        sprite: {fileID: -4328392219170815137, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: 17
+        y: -32
+      - res: B568DC9C
+        sprite: {fileID: 3732137977601866869, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: 26
+        y: -31
+      Loop: 1
+    - AnimName: hair001_0_5h
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: D9DFD6EE
+        sprite: {fileID: -590273348954759724, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: 14
+        y: -63
+      - res: 5CE15879
+        sprite: {fileID: 2233043352088331926, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: 5
+        y: -64
+      - res: F4C23775
+        sprite: {fileID: 4945010526594609212, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -6
+        y: -62
+      Loop: 1
+    - AnimName: hair001_0_5r
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: 7750AD5A
+        sprite: {fileID: 6306382149370629458, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -7
+        y: -60
+      - res: D695D4BE
+        sprite: {fileID: -2287457564490565306, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -7
+        y: -61
+      - res: C1FC0B8B
+        sprite: {fileID: -4566831676897886902, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -7
+        y: -63
+      - res: E88B9DB7
+        sprite: {fileID: 3027674710855830360, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -7
+        y: -60
+      - res: 9A96DF7E
+        sprite: {fileID: -4809221880097190137, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -7
+        y: -61
+      - res: 7FF309D9
+        sprite: {fileID: -1435358543041181027, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -7
+        y: -62
+      Loop: 1
+    - AnimName: hair001_0_5s
+      FrameRate: 8
+      Events: []
+      Frames:
+      - res: 6341BC2F
+        sprite: {fileID: 1113956310256295855, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -6
+        y: -63
+      - res: 4ED53F5B
+        sprite: {fileID: 1828111676272870161, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -5
+        y: -63
+      - res: 253C41C7
+        sprite: {fileID: 127944463353578193, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -5
+        y: -63
+      - res: E2D2B322
+        sprite: {fileID: -3101247439334105970, guid: 4056a3e1d40f99743956238dda2b1d0a,
+          type: 3}
+        x: -5
+        y: -63
+      Loop: 1
